@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/video/video",
     "pages/launch/launch"
   ],
   "window": {

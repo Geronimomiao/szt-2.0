@@ -19,9 +19,12 @@
 |- pages
 |    |- launch // 启动页图 
 |    |- select // 选择身份
+|    |- video // 情景再现
 |
 |
-|
+|- static
+|    |- css 
+|        |- common.css // 覆盖第三方 默认样式
 |
 |- app.js // 全局变量 方法
 |

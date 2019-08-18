@@ -1,1 +1,28 @@
+/* 第三方 样式引入 */
+@import "/lib/colorui/main.wxss";
+@import "/lib/colorui/icon.wxss";
+
+/* 自定义 覆盖样式 */
+@import '/static/css/common.wxss';
+
 /* 公共的 css 样式 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+page {
+  -webkit-font-smoothing: antialiased;
+  font-family: "PingHei","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+  font-size: 28rpx;
+  background: #F4F6F9;
+  height: 100vh;
+}
+
+/* just for test */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,24 @@
+<view class="container">
+<video id="myVideo" src="{{url}}" enable-danmu danmu-btn controls bindended="select"></video>
+  <view class="btn-area">
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>
+
+<view class="cu-modal {{hasSelected === true ? 'show' : ''}}" bindtap="select">
+  <view class="cu-dialog" catchtap>
+    
+    <radio-group class="block" >
+      <view class="cu-list menu text-left">
+        <view class="cu-item">请选择</view>
+        <view class="cu-item" wx:for="{{3}}" wx:key="{{index}}">
+          <label class="flex justify-between align-center flex-sub" bindtap="radioChange" data-dest="u{{index}}">
+            <view class="flex-sub">Item {{index +1}}</view>
+            <radio class="round"></radio>
+          </label>
+        </view>
+      </view>
+    </radio-group>
+  </view>
+</view>
