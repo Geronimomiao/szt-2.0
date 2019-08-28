@@ -1,0 +1,46 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container > .bcg {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  animation: fate-in 4s linear;
+}
+
+.container > .logo {
+  opacity: 0;
+  z-index: 2;
+  margin-top: 8rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #fff;
+  animation: fate-out 3s linear;
+}
+
+@keyframes fate-in {
+  0% {opacity: 0}
+  10% {opacity: 0.1}
+  20% {opacity: 0.4}
+  30% {opacity: 0.7}
+  40% {opacity: 0.75}
+  50% {opacity: 0.8}
+  60% {opacity: 0.85}
+  70% {opacity: 0.9}
+  80% {opacity: 0.94}
+  90% {opacity: 0.96}
+  100% {opacity: 1}
+}
+
+@keyframes fate-out {
+  0% {opacity: 1}
+  60% {opacity: 1}
+  80% {opacity: 0.8}
+  100% {opacity: 0}
+}
+

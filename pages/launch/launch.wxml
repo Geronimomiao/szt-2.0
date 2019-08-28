@@ -1,1 +1,4 @@
-launch
+<view class="container">
+  <view class="logo">思政棠</view>
+  <image class='bcg' src='/static/img/bg1.png'></image>
+</view>

@@ -13,7 +13,7 @@
 |
 |- utils
 |    |- api.js // 后台 api 
-|    |- router.js // 前端 路由
+|    |- router.js // 前端 路由 跳转方式
 |    |- store.js // 存一些关键的常量  
 |
 |- pages
@@ -24,7 +24,9 @@
 |
 |- static
 |    |- css 
-|        |- common.css // 覆盖第三方 默认样式
+|    |   |- common.css // 覆盖第三方 默认样式
+|    |- img // 图片资源
+|
 |
 |- app.js // 全局变量 方法
 |
