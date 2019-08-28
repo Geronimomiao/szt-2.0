@@ -13,7 +13,7 @@ const routerMap = {
 }
 
 const router = (state, dest) => {
- return router[state][dest]
+  return routerMap[state][dest]
 }
 
 
