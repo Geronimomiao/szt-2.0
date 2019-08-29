@@ -1,11 +1,16 @@
 {
   "pages": [
+    "pages/login/login",
 
+    "pages/select/select",
     "pages/launch/launch",
     "pages/video/video"
   ],
   "window": {
     "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/lib/colorui/components/cu-custom"
   },
   "sitemapLocation": "sitemap.json"
 }

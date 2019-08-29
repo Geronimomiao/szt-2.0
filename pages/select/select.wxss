@@ -1,0 +1,16 @@
+.container > .logo {
+  margin-top: 10rem;
+  width: 8rem;
+  height: 8rem;
+  z-index: 2
+}
+
+.container > .select {
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container > .confirm {
+  z-index: 2
+}

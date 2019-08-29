@@ -1,1 +1,11 @@
-select
+<view class='container'>
+  <image class="bg" src="/static/img/bg.png"></image>
+  <image class="logo" src="/static/img/logo.png"></image>
+  <view class="select">
+    <button class="cu-btn block lg">教师</button>
+    <button class="cu-btn block lg">学生</button>
+  </view>
+  <view class="confirm">
+    <button class="cu-btn block lg">确认身份</button>
+  </view>
+</view>

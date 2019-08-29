@@ -10,6 +10,7 @@
 |
 |- lib // 第三方库
 |    |- ColorUI // UI框架
+|    |- ali-icon // 字体图标
 |
 |- utils
 |    |- api.js // 后台 api 

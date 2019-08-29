@@ -1,19 +1,13 @@
-.container {
-  height: 100vh;
-  width: 100vw;
+.launch {
   display: flex;
   justify-content: center;
 }
 
-.container > .bcg {
-  position: fixed;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
+.launch > .bg {
   animation: fate-in 4s linear;
 }
 
-.container > .logo {
+.launch > .logo {
   opacity: 0;
   z-index: 2;
   margin-top: 8rem;
@@ -25,9 +19,9 @@
 
 @keyframes fate-in {
   0% {opacity: 0}
-  10% {opacity: 0.1}
-  20% {opacity: 0.4}
-  30% {opacity: 0.7}
+  10% {opacity: 0.05}
+  20% {opacity: 0.1}
+  30% {opacity: 0.5}
   40% {opacity: 0.75}
   50% {opacity: 0.8}
   60% {opacity: 0.85}
@@ -39,8 +33,8 @@
 
 @keyframes fate-out {
   0% {opacity: 1}
-  60% {opacity: 1}
-  80% {opacity: 0.8}
+  60% {opacity: 0.9}
+  80% {opacity: 0.7}
   100% {opacity: 0}
 }
 

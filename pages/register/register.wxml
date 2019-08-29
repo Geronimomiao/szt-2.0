@@ -1,0 +1,4 @@
+<view class='container'>
+  <image class="bg" src="/static/img/bg.png"></image>
+  <image class="logo" src="/static/img/logo.png"></image>
+</view>

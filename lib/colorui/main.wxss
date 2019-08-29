@@ -3942,8 +3942,3 @@ scroll-view.cu-steps .cu-item {
 }
 
 
-
-.bg-transparent{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-	color: #fff;
-}
