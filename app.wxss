@@ -28,9 +28,19 @@ page {
   align-items: center;
 }
 
+.logo {
+  margin-top: 8rem;
+  width: 8rem;
+  height: 8rem;
+}
+
 .bg {
   position: fixed;
   z-index: 1;
   width: 100vw;
   height: 100vh;
+}
+
+.z-index {
+ z-index: 2;
 }

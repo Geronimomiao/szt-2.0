@@ -1,0 +1,19 @@
+.container > .form {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.container > .form .item {
+  display: flex;
+  vertical-align: baseline;
+  margin-bottom: 0.9rem;
+}
+
+.container > .form  .item  .iconfont {
+ font-size: 1.2rem; 
+}
+
+.container > .form  .item  input {
+  display: inline;
+  margin-left: 0.3rem;
+}

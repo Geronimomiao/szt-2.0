@@ -1,14 +1,6 @@
-.container > .logo {
-  margin-top: 8rem;
-  width: 8rem;
-  height: 8rem;
-  z-index: 2;
-}
-
 .container > .form {
   width: 40%;
   margin-top: 2rem;
-  z-index: 2;
 }
 
 .container > .form .item {
@@ -24,4 +16,11 @@
 .container > .form  .item  input {
   display: inline;
   margin-left: 0.3rem;
+}
+
+.container > .login {
+}
+
+.container > .reg {
+
 }
