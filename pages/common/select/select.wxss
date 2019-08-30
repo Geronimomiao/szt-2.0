@@ -22,6 +22,15 @@
 }
 
 .tower-swiper .tower-item {
-  height: 680rpx;
-  width: 100rpx;
+  height: 75vh;
+  width: 10rpx;
 }
+
+
+.select > .confirm {
+  transform: translate(-40%, 0);
+  left: 50%;
+  position: absolute;
+  bottom: 6rem;
+}
+

@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/select/select",
-    "pages/login/login",
-    "pages/register/register",
-    "pages/launch/launch",
-    "pages/video/video"
+    "pages/common/launch/launch",
+    "pages/common/select/select",
+    "pages/common/login/login",
+    "pages/common/register/register",
+    
+    "pages/common/video/video"
   ],
   "window": {
     "navigationStyle": "custom"

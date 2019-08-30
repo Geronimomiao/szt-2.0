@@ -18,9 +18,11 @@
   margin-left: 0.3rem;
 }
 
-.container > .login {
-}
 
 .container > .reg {
+  margin-top: 0.7rem;
+}
 
+.cu-btn {
+  width: 8rem;
 }

@@ -17,3 +17,7 @@
   display: inline;
   margin-left: 0.3rem;
 }
+
+.cu-btn {
+  width: 8rem;
+}

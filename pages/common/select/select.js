@@ -1,13 +1,16 @@
+import { router, toNext } from '../../../utils/router.js'
+const app = getApp()
+
 Page({
   data: {
     cardCur: 0,
     swiperList: [{
       id: 0,
-      type: 'image',
+      type: 'teacher',
       url: '/static/img/teacher.png'
     }, {
-        id: 1,
-        type: 'image',
+      id: 1,
+      type: 'student',
       url: '/static/img/student.png',
     }],
   },
@@ -77,5 +80,13 @@ Page({
         swiperList: list
       })
     }
+  },
+  // 获取用户所选身份信息
+  confirm() {
+    // console.log(this.data.swiperList.filter(item => item.zIndex === 2)[0].type)
+    let state = this.data.swiperList.filter(item => item.zIndex === 2).shift().type
+    // console.log(state)
+    app.globalData.userInfo.state = state
+    toNext(router('common', 'register'), 'n')
   }
 })

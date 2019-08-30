@@ -1,4 +1,4 @@
-import { router, toNext } from '../../utils/router.js'
+import { router, toNext } from '../../../utils/router.js'
 
 Page({
   toSelect() {

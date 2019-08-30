@@ -1,4 +1,10 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">登录</view>
+</cu-custom>
+
 <view class='container'>
+
+
   <image class="bg" src="/static/img/bg.png"></image>
   <image class="logo z-index" src="/static/img/logo.png"></image>
   <form class="form z-index">
@@ -7,15 +13,14 @@
       <input placeholder="请输入姓名"></input>
     </view>
     <view class='item'>
-      <text class="iconfont icon-xuexiao1"></text>
-      <input placeholder="请输入学校名称"></input>
-    </view>
-    <view class='item'>
       <text class="iconfont icon-zhanghaoquanxianguanli"></text>
       <input placeholder="请输入学号/教工号"></input>
     </view>
   </form>
-  <view class="reg z-index">
-    <button>注册</button>
+  <view class="login z-index">
+    <button class="cu-btn lg shadow bg-gradual-blue">登录</button>
+  </view>
+  <view class="reg z-index" bindtap="toSelect">
+    <text class="text-blue">还没有账号 点击注册</text>
   </view>
 </view>

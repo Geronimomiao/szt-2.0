@@ -8,8 +8,9 @@ const routerMap = {
     'discuss': '/pages/discuss/discuss'
   },
   'common': {
-    'login': '/pages/login/login',
-    'select': '/pages/select/select'
+    'register': '/pages/common/register/register',
+    'login': '/pages/common/login/login',
+    'select': '/pages/common/select/select'
   }
 }
 
