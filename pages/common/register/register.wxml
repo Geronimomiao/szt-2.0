@@ -20,6 +20,6 @@
     </view>
   </form>
   <view class="reg z-index">
-   <button class="cu-btn lg shadow bg-gradual-blue">注册</button>
+   <button class="cu-btn lg shadow bg-gradual-blue" bindtap="toRegister">注册</button>
   </view>
 </view>

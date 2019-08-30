@@ -2,10 +2,10 @@
 
 const routerMap = {
   'teacher': {
-    'discuss': '/pages/discuss/discuss'
+    'func': '/pages/teacher/func/func'
   },
   'student': {
-    'discuss': '/pages/discuss/discuss'
+    'func': '/pages/student/func/func'
   },
   'common': {
     'register': '/pages/common/register/register',

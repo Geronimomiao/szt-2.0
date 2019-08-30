@@ -18,9 +18,12 @@
 |    |- store.js // 存一些关键的常量  
 |
 |- pages
-|    |- launch // 启动页图 
-|    |- select // 选择身份
-|    |- video // 情景再现
+|    |- common // 放教师 和 学生公用的页面
+|         |- launch // 启动页图 
+|         |- select // 选择身份
+|         |- video // 情景再现
+|    |- teacher // 放教师相关页面
+|    |- student // 放学生相关页面
 |
 |
 |- static

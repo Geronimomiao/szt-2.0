@@ -21,9 +21,6 @@ page {
 
 /* just for test */
 .container {
-  
-  
-  
   background: url('http://wsmpage.cn/szt2/bg.png');
   background-size: 100% 100%;
 
