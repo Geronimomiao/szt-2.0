@@ -2,15 +2,15 @@
   "pages": [
 
     
-
+    "pages/student/home/home",
     "pages/student/func/func",
     "pages/teacher/func/func",
-
+    "pages/common/ppt/ppt",
     "pages/common/launch/launch",
     "pages/common/select/select",
     "pages/common/login/login",
     "pages/common/register/register",
-    "pages/common/ppt/ppt",
+    
     "pages/common/video/video"
   ],
   "window": {

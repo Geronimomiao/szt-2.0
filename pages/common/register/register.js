@@ -4,6 +4,6 @@ const app = getApp()
 Page({
   toRegister() {
     let state = app.globalData.userInfo.state
-    toNext(router(state, 'func'), 'r')
+    toNext(router(state, 'home'), 'r')
   }
 })

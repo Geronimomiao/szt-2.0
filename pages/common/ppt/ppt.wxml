@@ -1,4 +1,5 @@
 <view class='container'>
   <button bindtap="show">SHOW</button>
-  <web-view src="https://enapp.chinadaily.com.cn/a/201908/30/AP5d68be7ba310aba8ca8c3de2.html?from=singlemessage"></web-view>
+  <!-- <web-view src="https://enapp.chinadaily.com.cn/a/201908/30/AP5d68be7ba310aba8ca8c3de2.html?from=singlemessage"></web-view> -->
+  
 </view>

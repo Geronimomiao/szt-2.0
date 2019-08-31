@@ -2,15 +2,16 @@
 
 const routerMap = {
   'teacher': {
-    'func': '/pages/teacher/func/func'
+    'home': '/pages/teacher/home/home'
   },
   'student': {
-    'func': '/pages/student/func/func'
+    'home': '/pages/student/home/home'
   },
   'common': {
     'register': '/pages/common/register/register',
     'login': '/pages/common/login/login',
-    'select': '/pages/common/select/select'
+    'select': '/pages/common/select/select',
+    'news': '/pages/common/news/news',
   }
 }
 

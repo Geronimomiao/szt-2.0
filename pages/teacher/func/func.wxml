@@ -1,1 +1,5 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">课程</view>
+</cu-custom>
+
 <scroll-view scroll-y class="scrollPage"></scroll-view>

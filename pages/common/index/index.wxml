@@ -1,1 +1,37 @@
-<scroll-view scroll-y class="scrollPage"></scroll-view>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">时政专栏</view>
+</cu-custom>
+
+
+<scroll-view scroll-y class="scrollPage">
+  <swiper class="screen-swiper square-dot banner" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{bannerList}}" wx:key data-cur="{{item.id}}" data-type="banner" bindtap="showNews">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      <view class="swiper-word">
+        <view class="word">
+          <view>{{item.title}}</view>
+          <view>{{item.info}}</view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+
+  <view class="cu-card article">
+    <view class="cu-item shadow" wx:for="{{articleList}}" wx:key data-cur="{{item.id}}" data-type="article" bindtap="showNews">
+      <view class="title">
+        <view class="text-cut">{{item.title}}</view>
+      </view>
+      <view class="content">
+        <image src="{{item.url}}" mode="aspectFill"></image>
+        <view class="desc">
+          <view class="text-content"> {{item.info}}</view>
+          <view class="text-right">
+            <view class="cu-tag bg-blue light sm round">推荐</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,3 +1,7 @@
 {
-  
+  "usingComponents": {
+    "index": "/pages/common/index/index",
+    "func": "/pages/student/func/func",
+    "person": "/pages/common/person/person"
+  }
 }

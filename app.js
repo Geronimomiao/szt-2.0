@@ -4,7 +4,8 @@ App({
   globalData: {
     userInfo: 　{
       state: ''
-    }
+    },
+    article_url: ''
   },
 
   onLaunch() {

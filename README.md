@@ -22,8 +22,18 @@
 |         |- launch // 启动页图 
 |         |- select // 选择身份
 |         |- video // 情景再现
+|         |- index // 首页新闻推送
+|         |- person // 个人信息页面
+|         |- ppt // 课件展示 
+|         |- login // 登录页面
+|         |- register // 注册页面
+|         |- news // 展示新闻页
 |    |- teacher // 放教师相关页面
+|         |- home // 登录后 跳转页面
+|         |- func // 功能页面
 |    |- student // 放学生相关页面
+|         |- home // 登录后 跳转页面
+|         |- func // 功能页面
 |
 |
 |- static

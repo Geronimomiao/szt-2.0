@@ -1,0 +1,24 @@
+.banner {
+  padding: 10rpx;
+}
+
+.swiper-word {
+  position: relative;
+}
+
+.word {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 28rpx;
+  left: 15rpx;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.scrollPage {
+  padding-bottom: calc(100rpx + env(safe-area-inset-bottom) / 2);
+}
