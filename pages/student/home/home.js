@@ -1,6 +1,6 @@
 Page({
   data: {
-    PageCur: 'index'
+    PageCur: 'person'
   },
   NavChange(e) {
     this.setData({

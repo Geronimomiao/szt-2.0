@@ -1,0 +1,60 @@
+.bg {
+  background-image: url(https://img.wsmpage.cn/szt2/bg/1.png);
+  background-size: cover;
+  height: 300rpx;
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.cu-card {
+  padding-top: 130rpx;
+}
+
+.cu-card > .cu-item {
+  height: 240rpx;
+  background: linear-gradient(45deg, #0081ff, #1cbbb4);
+  border-radius: 10rpx;
+  
+}
+
+.cu-card > .cu-item > .info {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem;
+}
+
+.cu-card > .cu-item > .info > .userinfo {
+  display: flex;
+  align-items: center;
+}
+
+.cu-card > .cu-item > .info .cuIcon-right {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.cu-card > .cu-item > .info .userinfo .userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow:hidden;
+  margin-right: 0.4rem;
+}
+
+.info .username {
+  font-size: 1.4rem;
+  margin-bottom: 0.1rem;
+}
+
+/* .padding-140 {
+  
+} */
+
+.shadow-warp {
+  padding-top: 140rpx;
+  box-shadow: 0 0 0;
+}

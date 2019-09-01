@@ -19,6 +19,10 @@
   text-align: right;
 }
 
-.scrollPage {
-  padding-bottom: calc(100rpx + env(safe-area-inset-bottom) / 2);
+/* .scrollPage {
+  padding-bottom: 130rpx;
+} */
+
+.border-radius {
+  border-radius: 10rpx;
 }

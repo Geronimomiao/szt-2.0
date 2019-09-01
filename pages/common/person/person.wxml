@@ -1,7 +1,51 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
-  <view slot="content">个人信息</view>
-</cu-custom>
-
 <scroll-view scroll-y class="scrollPage">
-  person
+  <view class="bg">
+    <view class="cu-card">
+      <view class="cu-item shadow-blur" bindtap="toChild">
+      <!-- 卡片 -->
+        <view class="info">
+          <!-- 卡片左侧 -->
+          <view class="userinfo">
+            <view class="userinfo-avatar">
+              <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <view>
+              <view class="username">
+                <open-data type="userNickName" class="text-white" lang="zh_CN"></open-data>
+              </view>
+              <view class="userid">学工号: 1711650121</view>
+            </view>
+
+          </view>
+          <!-- 卡片右侧 -->
+          <view>
+            <text class="cuIcon-right lg text-gray"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 弥补卡片下半部分空白 -->
+  <view class=""></view>
+
+  <view class="padding flex text-center text-grey bg-white shadow-warp padding-140">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">14</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-attentionfill"></text> 关注</view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">20</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> 收藏</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green">6</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-fork"></text> 粉丝</view>
+    </view>
+  </view>
+
+  <!-- 弥补 tabbar 位置 -->
+  <view class="cu-tabbar-height"></view>
 </scroll-view>
