@@ -3,5 +3,37 @@
 </cu-custom>
 
 <scroll-view scroll-y class="scrollPage">
+
+  <view class="cu-bar bg-white">
+    <view class='action'>
+      <text class='cuIcon-title text-blue'></text>功能
+    </view>
+  </view>
+
+  <view class="nav-list">
+    <view class="nav-li bc-top">
+      <view class="cuIcon-group icon"></view>
+      <view class='text'>加入课程</view>
+    </view>
+    <view class="nav-li bc-top">
+      <view class="cuIcon-post icon"></view>
+      <view class='text'>查看课件</view>
+    </view>
+    <view class="nav-li bc-bottom">
+      <view class="cuIcon-record icon"></view>
+      <view class='text'>情景再现</view>
+    </view>
+    <view class="nav-li bc-bottom">
+      <view class="cuIcon-punch icon"></view>
+      <view class='text'>课程评价</view>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-white">
+    <view class='action'>
+      <text class='cuIcon-title text-blue'></text>我的课程
+    </view>
+  </view>
+
   <view class="cu-tabbar-height"></view>
 </scroll-view>

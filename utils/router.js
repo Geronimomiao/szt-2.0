@@ -12,6 +12,7 @@ const routerMap = {
     'login': '/pages/common/login/login',
     'select': '/pages/common/select/select',
     'news': '/pages/common/news/news',
+    'info': '/pages/common/info/info',
   }
 }
 

@@ -1,0 +1,64 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">个人信息</view>
+</cu-custom>
+
+<view class="info">
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item">
+      <view class="content">
+        <view class='item'>
+          <text class="cuIcon-location text-grey"></text>
+          <text class="text-grey">学校</text>
+        </view>
+        <view class='item'>
+          <text class="text-grey">天津工业大学</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="cu-item">
+      <view class="content">
+        <view class='item'>
+          <text class="cuIcon-profile text-grey"></text>
+          <text class="text-grey">性别</text>
+        </view>
+        <view class='item'>
+          <open-data type="userGender" class="text-grey" lang="zh_CN"></open-data>
+        </view>
+      </view>
+    </view>
+
+    <view class="cu-item">
+      <view class="content">
+        <view class='item'>
+          <text class="cuIcon-emoji text-grey"></text>
+          <text class="text-grey">姓名</text>
+        </view>
+        <view class='item'>
+          <open-data type="userNickName" class="text-grey" lang="zh_CN"></open-data>
+        </view>
+      </view>
+    </view>
+
+    <view class="cu-item">
+      <view class="content">
+        <view class='item'>
+          <text class="cuIcon-addressbook text-grey"></text>
+          <text class="text-grey">学工号</text>
+        </view>
+        <view class='item'>
+          <text class="text-grey">1711650121</text>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+</view>
+

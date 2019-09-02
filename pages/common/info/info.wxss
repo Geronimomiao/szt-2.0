@@ -1,0 +1,32 @@
+.info {
+  background: url('http://wsmpage.cn/szt2/bg.png');
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.info .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info .userinfo-avatar {
+  width: 230rpx;
+  height: 230rpx;
+  margin: 9vh;
+  border-radius: 50%;
+  overflow:hidden; 
+}
+
+.info .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info .content .text-grey {
+  margin-left: 10rpx;
+}
+
+.info .cu-list {
+  margin: 0 75rpx;
+}

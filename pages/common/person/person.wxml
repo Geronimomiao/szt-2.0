@@ -1,8 +1,8 @@
 <scroll-view scroll-y class="scrollPage">
   <view class="bg">
     <view class="cu-card">
-      <view class="cu-item shadow-blur" bindtap="toChild">
-      <!-- 卡片 -->
+      <view class="cu-item shadow-blur" bindtap="toInfo">
+        <!-- 卡片 -->
         <view class="info">
           <!-- 卡片左侧 -->
           <view class="userinfo">
@@ -25,10 +25,9 @@
       </view>
     </view>
   </view>
-  <!-- 弥补卡片下半部分空白 -->
-  <view class=""></view>
 
-  <view class="padding flex text-center text-grey bg-white shadow-warp padding-140">
+  <!-- padding-140 弥补卡片下半部分空白 -->
+  <view class="padding flex text-center text-grey bg-white shadow-warp">
     <view class="flex flex-sub flex-direction solid-right">
       <view class="text-xxl text-orange">14</view>
       <view class="margin-top-sm">
@@ -45,6 +44,22 @@
         <text class="cuIcon-fork"></text> 粉丝</view>
     </view>
   </view>
+
+
+  <!-- 功能栏 start -->
+
+  <view class="func">
+    <view class="func-item mt-55 padding margin" wx:for="{{list}}" wx:key bindtap="{{item.func}}">
+      <view class="item">
+        <text class="cuIcon-{{item.icon}} lg icon"></text>
+        <text>{{item.msg}}</text>
+      </view>
+      <view class="item">
+        <text class="cuIcon-right lg text-gray icon"></text>
+      </view>
+    </view>
+  </view>
+
 
   <!-- 弥补 tabbar 位置 -->
   <view class="cu-tabbar-height"></view>

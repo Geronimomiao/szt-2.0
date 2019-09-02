@@ -50,11 +50,31 @@
   margin-bottom: 0.1rem;
 }
 
-/* .padding-140 {
-  
-} */
-
 .shadow-warp {
   padding-top: 140rpx;
   box-shadow: 0 0 0;
 }
+
+.mt-55 {
+  margin-top: 55rpx;
+}
+
+.atc {
+  margin: auto 0;
+}
+
+.func-item {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #fff;
+  border-radius: 5rpx;
+  box-shadow:2px 2px 5px rgb(185, 185, 185);
+}
+
+.icon {
+  font-weight: 700;
+  margin-right: 13rpx;
+}
+
+
