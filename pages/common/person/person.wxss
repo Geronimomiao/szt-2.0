@@ -46,8 +46,13 @@
 }
 
 .info .username {
+  font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 0.1rem;
+}
+
+.info .userid {
+  font-weight: 550
 }
 
 .shadow-warp {

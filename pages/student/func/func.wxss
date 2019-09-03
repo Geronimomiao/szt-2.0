@@ -34,3 +34,18 @@
   font-size: 1.2rem;
   color: #fff;
 }
+
+.main {
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.fz {
+  font-size: 4rem;
+  color: rgb(213, 228, 251)
+}

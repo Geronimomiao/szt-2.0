@@ -1,19 +1,21 @@
 {
   "pages": [
-    
+    "pages/common/courseList/courseList",
     "pages/student/home/home",
-    "pages/common/info/info",
+
+
+    "pages/common/launch/launch",
     
+    "pages/common/info/info",
     "pages/student/func/func",
     "pages/teacher/func/func",
     "pages/common/ppt/ppt",
-
-    "pages/common/launch/launch",
     "pages/common/select/select",
     "pages/common/login/login",
     "pages/common/register/register",
     
-    "pages/common/video/video"
+    "pages/common/video/video",
+    "pages/common/notFound/notFound"
   ],
   "window": {
     "navigationStyle": "custom"

@@ -5,7 +5,10 @@ App({
     userInfo: 　{
       state: ''
     },
-    article_url: ''
+    article_url: '',
+    // 标记哪种资源 未找到
+    sourceState: '',
+    myclass: ''
   },
 
   onLaunch() {

@@ -49,7 +49,7 @@
   <!-- 功能栏 start -->
 
   <view class="func">
-    <view class="func-item mt-55 padding margin" wx:for="{{list}}" wx:key bindtap="{{item.func}}">
+    <view class="func-item mt-55 padding margin" wx:for="{{list}}" wx:key bindtap="{{item.func}}" data-source="{{item.source}}">
       <view class="item">
         <text class="cuIcon-{{item.icon}} lg icon"></text>
         <text>{{item.msg}}</text>

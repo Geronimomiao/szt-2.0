@@ -1,0 +1,22 @@
+.cu-card.article> .cu-item {
+  padding-top: 30rpx;
+  
+  /* 待定 是否要边距 */
+  margin: 0;
+  
+}
+
+.desc-top .class-name {
+  font-weight: 550;
+}
+
+.desc-top .school {
+  font-size: 0.8rem;
+}
+
+.desc-btm {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+

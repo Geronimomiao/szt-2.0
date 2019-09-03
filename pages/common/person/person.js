@@ -1,4 +1,11 @@
-import { router, toNext } from '../../../utils/router.js'
+const app = getApp();
+
+import {
+  router,
+  toNext
+} from '../../../utils/router.js';
+
+
 
 Component({
   options: {
@@ -6,26 +13,32 @@ Component({
   },
   data: {
     list: [{
-      icon: 'test',
+      icon: 'list',
       msg: '我的课件',
-      func: 'list'
+      func: 'notFound',
+      source: 'ppt'
     }, {
       icon: 'choiceness',
       msg: '我的收藏',
-      func: 'test'
+      func: 'notFound',
+      source: 'fav'
     }, {
       icon: 'notice',
       msg: '我的消息',
-      func: 'test'
+      func: 'notFound',
+      source: 'message'
     }, {
       icon: 'settings',
-      msg: '帮助与反馈',
-      func: 'test'
+      msg: '帮助与反馈'
     }]
   },
   methods: {
-    test() {
-      console.log(11)
+    notFound(e) {
+      // console.log(e.currentTarget.dataset.source)
+      // 默认用户 没有任何资源
+      let type = e.currentTarget.dataset.source;
+      app.globalData.sourceState = type;
+      toNext(router('common', 'notFound'), 'n')
     },
     toInfo() {
       toNext(router('common', 'info'), 'n')

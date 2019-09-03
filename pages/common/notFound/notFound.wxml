@@ -1,0 +1,9 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">404</view>
+</cu-custom>
+
+<view class="main">
+  <view class="{{cls}} fz"></view>
+  <view class="padding margin text-gray">{{info}}</view>
+</view>
+

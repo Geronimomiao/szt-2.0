@@ -13,6 +13,9 @@ const routerMap = {
     'select': '/pages/common/select/select',
     'news': '/pages/common/news/news',
     'info': '/pages/common/info/info',
+    'courseList': '/pages/common/courseList/courseList',
+    'courseDetail': '/pages/common/courseDetail/courseDetail',
+    'notFound': '/pages/common/notFound/notFound'
   }
 }
 
