@@ -16,16 +16,16 @@
   <view class="cu-card article" wx:for="{{classList}}" wx:key>
     <view class="cu-item shadow">
       <view class="content">
-        <image src="{{item.url}}" mode="aspectFill"></image>
+        <image src="{{item.url}}" mode="aspectFill" bindtap="{{item.detail}}" data-id="{{item.id}}"></image>
         <view class="desc">
-          <view class="desc-top">
+          <view class="desc-top" bindtap="{{item.detail}}"  data-id="{{item.id}}">
             <view class="class-name">{{item.title}}</view>
             <view class="school text-grey">{{item.schoolName}}</view>
           </view>
 
           <view class="desc-btm">
             <view class="text-grey">{{item.className}}</view>
-            <view class="text-blue">加入</view>
+            <view class="text-blue" bindtap="{{item.join}}">加入</view>
           </view>
         </view>
       </view>

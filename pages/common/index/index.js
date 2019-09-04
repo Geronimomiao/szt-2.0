@@ -1,8 +1,10 @@
+const app = getApp();
+
 import {
   router,
   toNext
-} from '../../../utils/router.js'
-const app = getApp()
+} from '../../../utils/router.js';
+
 
 Component({
   options: {

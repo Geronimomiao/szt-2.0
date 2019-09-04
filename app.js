@@ -8,7 +8,8 @@ App({
     article_url: '',
     // 标记哪种资源 未找到
     sourceState: '',
-    myclass: ''
+    myclass: '',
+    classDetail: {}
   },
 
   onLaunch() {

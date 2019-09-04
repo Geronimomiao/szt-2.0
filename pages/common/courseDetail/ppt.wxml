@@ -1,0 +1,28 @@
+<scroll-view scroll-y class="scrollPage">
+  <view>
+    <view class="classname {{ (shoufenqinName == 1) ? 'listAction' : ''}}" data-listid="1" catchtap="shoufenqin">爱心</view>
+    <view class="box {{ (shoufenqinName == 1) ? 'listAuto' : ''}}" data-listid="1" style="height: {{(shoufenqinName == 1) ? height : 0}}">
+      <view class="list-item">爱国爱校</view>
+      <view class="list-item">乐于助人</view>
+      <view class="list-item">爱国爱校</view>
+      <view class="list-item">乐于助人</view>
+      <view class="list-item">爱国爱校</view>
+      <view class="list-item">乐于助人</view>
+    </view>
+  </view>
+
+
+  <view>
+    <view class="classname {{ (shoufenqinName == 2) ? 'listAction' : ''}}" data-listid="2" catchtap="shoufenqin">守纪</view>
+    <view class="box {{ (shoufenqinName == 2) ? 'listAuto' : ''}}" style="height: {{(shoufenqinName == 2) ? height : 0}}" data-listid="2">
+      <view class="list-item">我最帅</view>
+      <view class="list-item">我很帅</view>
+      <view class="list-item">我最帅</view>
+      <view class="list-item">我很帅</view>
+      <view class="list-item">我最帅</view>
+      <view class="list-item">我很帅</view>
+    </view>
+  </view>
+
+  
+</scroll-view>

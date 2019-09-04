@@ -11,6 +11,7 @@
 |- lib // 第三方库
 |    |- ColorUI // UI框架
 |    |- ali-icon // 字体图标
+|    |- my-icon // 一些自定义字体图标
 |
 |- utils
 |    |- api.js // 后台 api 
@@ -29,6 +30,8 @@
 |         |- register // 注册页面
 |         |- news // 展示新闻页
 |         |- info // 展示详细个人信息
+|         |- classList // 课程列表
+|         |- classDetail // 课程详细信息
 |    |- teacher // 放教师相关页面
 |         |- home // 登录后 跳转页面
 |         |- func // 功能页面

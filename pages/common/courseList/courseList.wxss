@@ -1,9 +1,6 @@
 .cu-card.article> .cu-item {
   padding-top: 30rpx;
-  
-  /* 待定 是否要边距 */
-  margin: 0;
-  
+  margin-bottom: 0rpx;
 }
 
 .desc-top .class-name {
