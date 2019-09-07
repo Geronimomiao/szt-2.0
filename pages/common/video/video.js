@@ -18,6 +18,7 @@ const videoUrl = {
 }
 
 Page({
+  inputValue: '',
   data: {
     hasSelected: false,
     dest: 'u0',
@@ -30,9 +31,12 @@ Page({
   },
   bindSendDanmu() {
     this.videoContext.sendDanmu({
-      text: '1111',
+      text: this.inputValue,
       color: getRandomColor()
     })
+  },
+  bindInputBlur: function (e) {
+    this.inputValue = e.detail.value
   },
   setUrl(dest) {
     this.setData({

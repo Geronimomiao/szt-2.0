@@ -12,7 +12,7 @@
 </scroll-view>
 
 <!-- 课程列表 -->
-<view class="classList">
+<view class="classList margin-bottom">
   <view class="cu-card article" wx:for="{{classList}}" wx:key>
     <view class="cu-item shadow">
       <view class="content">
@@ -32,3 +32,4 @@
     </view>
   </view>
 </view>
+
