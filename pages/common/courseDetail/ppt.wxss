@@ -8,7 +8,8 @@
 }
 .box{
 	height:0px;
-	overflow:hidden;
+	/* overflow:hidden; */
+  display: none;
 }
 .classname{
 	border-bottom:1px solid #E1E1E1;
@@ -40,6 +41,26 @@
   所以如果需要展开动画的话，高度就得px单位写死。
   如果要高度自适应使用height:auto，但是没有动画  
   */
-  /* height: 185px; */
+  height: 185px; 
   transition: height .3s;
 }
+
+
+.chapter-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 550;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.chapter-detail {
+  /* 动画 高度单位必须为 px */
+  transition: height .3s;
+  overflow:hidden;
+}
+
+.chapter-item {
+  display: flex;
+  justify-content: space-between;
+}
+

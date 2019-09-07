@@ -19,4 +19,5 @@
   <!-- 课堂互动 -->
   <interactive wx:if="{{TabCur === 2}}"></interactive>
 
+   <!-- <view class="cu-tabbar-height"></view> -->
 </scroll-view>
