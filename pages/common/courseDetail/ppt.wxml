@@ -10,15 +10,30 @@
 
     <!-- 章节详情 -->
     <view class="chapter-detail" style="height: {{(first === second) && (index === first) ? height : 0}}">
-      <view class="chapter-item margin-sm padding-lr-sm" wx:for="{{item.chapterItem}}" wx:key>
+      <view class="chapter-item margin-sm padding-lr-sm" wx:for="{{item.chapterItem}}" wx:key bindtap="down"  data-chapterIndex="{{index}}">
         <view>
           <text class="text-blue">{{item.type}}</text>
           <text class="text-grey padding-left-xs">{{item.msg}}</text>
         </view>
-        <view class="cuIcon-down"></view>
-        <!-- <view class=""></view> -->
+        
+        <view class="cuIcon-focus" wx:if="{{item.download}}" ></view>
+        <view class="cuIcon-down" wx:else></view>
       </view>
     </view>
   </view>
 
 </scroll-view>
+
+<view class="cu-modal {{modalName=='down'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-blue"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      课件以开始下载 请耐心等待
+    </view>
+  </view>
+</view>

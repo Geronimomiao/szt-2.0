@@ -32,6 +32,10 @@
 |         |- info // 展示详细个人信息
 |         |- classList // 课程列表
 |         |- classDetail // 课程详细信息
+|               |- courseDetail // 页面骨架
+|               |- ppt // 课件查看页面
+|               |- interactive // 交互页面
+|               |- comment // 评价页面 
 |    |- teacher // 放教师相关页面
 |         |- home // 登录后 跳转页面
 |         |- func // 功能页面
