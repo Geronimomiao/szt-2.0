@@ -1,0 +1,11 @@
+.select {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8rpx;
+}
+
