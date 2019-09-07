@@ -5,8 +5,8 @@
     "pages/student/home/home",
 
 
-    "pages/common/launch/launch",
     
+    "pages/common/launch/launch",
     "pages/common/info/info",
     "pages/student/func/func",
     "pages/teacher/func/func",

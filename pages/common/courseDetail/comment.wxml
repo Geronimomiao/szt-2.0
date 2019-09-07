@@ -27,5 +27,17 @@
       <text class="cuIcon-title text-blue"></text> 你的看法
     </view>
   </view>
-
+  <!-- 问题 -->
+  <view class="point-msg bg-white margin padding-sm">
+    你认为社会责任感是一个人对祖国、对民族、对人类的繁荣和进步，对他人的生存和发展所承担的职责感和使命感。增强社会责任感是人生修养中什么？
+  </view>
+  <!-- 选项 -->
+  <view class="point-chioce margin-top bg-white margin padding-sm">
+		<view class="title">你的选择</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker text-blue">
+        {{index?picker[index]: picker[0]}}
+			</view>
+		</picker>
+	</view>
 </scroll-view>
