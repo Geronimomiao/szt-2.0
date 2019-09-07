@@ -9,3 +9,10 @@
   border-radius: 8rpx;
 }
 
+.title {
+  border-radius: 10rpx;
+}
+
+.join {
+  float: right;
+}

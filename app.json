@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/common/launch/launch",
+    
     "pages/common/courseList/courseList",
     "pages/student/home/home",
 
 
-    
+    "pages/common/launch/launch",
     
     "pages/common/info/info",
     "pages/student/func/func",

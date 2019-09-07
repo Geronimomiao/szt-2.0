@@ -2,7 +2,7 @@
   
   <!-- 选项 -->
   <view class="select">
-    <view class="card bg-img shadow-blur padding margin" style="background-image:url({{item.url}})" wx:for="{{card}}">{{item.msg}}</view>
+    <view class="card bg-img shadow-blur padding margin" style="background-image:url({{item.url}})" wx:for="{{card}}" wx:key>{{item.msg}}</view>
   </view>
   
   <!-- 讨论区 -->
@@ -11,5 +11,11 @@
       <text class="cuIcon-title text-blue"></text> 讨论区
     </view>
   </view>
-  
+
+  <view class="title bg-white margin padding" wx:for="{{discuss}}" wx:key>
+    <text>{{item.title}}</text>
+    <text class="text-blue join" bindtap="toDiscuss">加入</text>
+  </view>
+
+
 </scroll-view>

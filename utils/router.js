@@ -16,6 +16,7 @@ const routerMap = {
     'info': '/pages/common/info/info',
     'courseList': '/pages/common/courseList/courseList',
     'courseDetail': '/pages/common/courseDetail/courseDetail',
+    'chatRoom': '/pages/common/chatRoom/chatRoom',
     'notFound': '/pages/common/notFound/notFound'
   }
 }
