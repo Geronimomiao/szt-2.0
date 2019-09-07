@@ -8,6 +8,7 @@ const routerMap = {
     'home': '/pages/student/home/home'
   },
   'common': {
+    'video': '/pages/common/video/video',
     'register': '/pages/common/register/register',
     'login': '/pages/common/login/login',
     'select': '/pages/common/select/select',

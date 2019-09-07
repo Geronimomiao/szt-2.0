@@ -26,10 +26,11 @@ Page({
   onReady(res) {
     this.setUrl(this.data.dest)
     this.videoContext = wx.createVideoContext('myVideo')
+    this.videoContext.requestFullScreen()
   },
   bindSendDanmu() {
     this.videoContext.sendDanmu({
-      text: '嘤嘤嘤',
+      text: '1111',
       color: getRandomColor()
     })
   },

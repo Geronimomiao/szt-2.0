@@ -11,7 +11,7 @@
     
     <radio-group class="block" >
       <view class="cu-list menu text-left">
-        <view class="cu-item">请选择</view>
+        <view class="cu-item">不同的选择 或许会有不同的结局</view>
         <view class="cu-item" wx:for="{{3}}" wx:key="{{index}}">
           <label class="flex justify-between align-center flex-sub" bindtap="radioChange" data-dest="u{{index}}">
             <view class="flex-sub">Item {{index +1}}</view>

@@ -5,11 +5,11 @@ Page({
   data: {
     TabCur: 0,
     state: [{
-      type: '课件'
+      type: '课程结构'
     }, {
-      type: '评价'
+      type: '课前准备'
     }, {
-      type: '互动'
+      type: '实时互动'
     }],
   },
 

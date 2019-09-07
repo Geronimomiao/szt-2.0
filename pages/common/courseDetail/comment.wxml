@@ -1,1 +1,31 @@
-<scroll-view scroll-y class="scrollPage">comment</scroll-view>
+<scroll-view scroll-y class="scrollPage">
+
+  <!-- 情景再现 -->
+  <view class="cu-bar bg-white margin-top-sm">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text> 情景再现
+    </view>
+  </view>
+
+  <view class="card" bindtap="toVideo">
+    <view class="cu-card case">
+      <view class="cu-item shadow">
+        <view class="image">
+          <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix"></image>
+          <view class="cu-tag bg-blue">史诗</view>
+          <view class="cu-bar bg-shadeBottom">
+            <text class="text-cut">我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 你的看法 -->
+  <view class="cu-bar bg-white margin-top-sm">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text> 你的看法
+    </view>
+  </view>
+
+</scroll-view>
