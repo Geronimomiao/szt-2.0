@@ -31,6 +31,7 @@
 |         |- info // 展示详细个人信息
 |         |- classList // 课程列表
 |         |- classDetail // 课程详细信息
+|         |- chatRoom // 讨论区(通过 websocket 进行实时通信)
 |               |- courseDetail // 页面骨架
 |               |- ppt // 课件查看页面
 |               |- interactive // 交互页面
