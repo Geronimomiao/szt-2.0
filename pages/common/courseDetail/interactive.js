@@ -82,5 +82,8 @@ Component({
         premisson: null
       })
     },
+    toEvaluation() {
+      toNext(router('common', 'evaluation'), 'r')
+    }
   }
 })

@@ -1,0 +1,56 @@
+<view class="point-container">
+  <cu-custom bgColor="bg-transparent" isBack="{{true}}">
+    <view slot="content">请为本堂课教师打分</view>
+  </cu-custom>
+  <view class="bgc">
+    <view wx:if="{{!hasSelected}}" class="choose">
+      <view class="selected">
+        <view class="item"></view>
+        <view class="item select-2 animated fadeInDown delay-1s" bindtap="choice" data-point="+10" data-selectClass="select-2"></view>
+        <view class="item select-3 animated fadeInDown delay-g1s" bindtap="choice" data-point="+5" data-selectClass="select-3"></view>
+        <view class="item"></view>
+      </view>
+      <view class="point">
+        <view class="item"></view>
+        <view class="item animated zoomIn delay-1s">+10</view>
+        <view class="item animated zoomIn delay-g1s">+5</view>
+        <view class="item"></view>
+      </view>
+      <view class="selected">
+        <view class="item select-1 animated fadeInDown delay-s1s" bindtap="choice" data-point="+15" data-selectClass="select-1"></view>
+        <view class="item"></view>
+        <view class="item"></view>
+        <view class="item select-4 animated fadeInDown delay-2s" bindtap="choice" data-point="+0" data-selectClass="select-4"></view>
+      </view>
+      <view class="point">
+        <view class="item animated zoomIn delay-s1s">+15</view>
+        <view class="item"></view>
+        <view class="item"></view>
+        <view class="item animated zoomIn delay-2s">+0</view>
+      </view>
+    </view>
+    <view wx:if="{{hasSelected}}" class="hasChoose">
+      <view class="h12 animated zoomIn delay-s1s {{selectClass}}"></view>
+      <view class="f2 animated zoomIn delay-s1s">{{point}}</view>
+    </view>
+
+    <view class="cu-modal {{modalName=='DialogModal'?'show':''}}">
+      <view class="cu-dialog">
+        <view class="cu-bar bg-white justify-end">
+          <view class="content">打分成功</view>
+          <view class="action" bindtap="hideModal">
+            <text class="cuIcon-close text-red"></text>
+          </view>
+        </view>
+        <view class="padding-xl">
+          恭喜您打分成功 即将为您返回首页
+        </view>
+        <view class="cu-bar bg-white justify-end">
+          <view class="action">
+            <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

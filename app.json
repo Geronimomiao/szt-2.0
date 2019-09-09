@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+    "pages/common/evaluation/evaluation",
     "pages/common/courseList/courseList",
     "pages/student/home/home",
 
