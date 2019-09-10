@@ -2,6 +2,8 @@
   <cu-custom bgColor="bg-transparent" isBack="{{true}}">
     <view slot="content">请为本堂课教师打分</view>
   </cu-custom>
+
+  <!-- 评分部分 -->
   <view class="bgc">
     <view wx:if="{{!hasSelected}}" class="choose">
       <view class="selected">
@@ -33,23 +35,30 @@
       <view class="h12 animated zoomIn delay-s1s {{selectClass}}"></view>
       <view class="f2 animated zoomIn delay-s1s">{{point}}</view>
     </view>
+  </view>
 
-    <view class="cu-modal {{modalName=='DialogModal'?'show':''}}">
-      <view class="cu-dialog">
-        <view class="cu-bar bg-white justify-end">
-          <view class="content">打分成功</view>
-          <view class="action" bindtap="hideModal">
-            <text class="cuIcon-close text-red"></text>
-          </view>
-        </view>
-        <view class="padding-xl">
-          恭喜您打分成功 即将为您返回首页
-        </view>
-        <view class="cu-bar bg-white justify-end">
-          <view class="action">
-            <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
-          </view>
-        </view>
+  <!-- 思政棠的状态 -->
+  <view class="bottom">
+    111
+  </view>
+
+</view>
+
+
+<view class="cu-modal {{modalName=='DialogModal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">打分成功</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      恭喜您打分成功 即将为您返回首页
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
       </view>
     </view>
   </view>

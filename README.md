@@ -46,7 +46,7 @@
 |
 |- static
 |    |- css 
-|    |   |- common.css // 覆盖第三方 默认样式
+|        |- common.css // 覆盖第三方 默认样式
 |    |- img // 图片资源
 |
 |

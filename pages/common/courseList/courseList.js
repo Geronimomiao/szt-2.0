@@ -8,6 +8,7 @@ import {
 Page({
   data: {
     TabCur: 0,
+    // 课程分类
     state: [{
       type: '全部'
     }, {
@@ -15,47 +16,17 @@ Page({
     }, {
       type: '已完结'
     }],
-    classList: [{
-      id: '1',
-      url: 'https://img.wsmpage.cn/szt2/course/sixiu.png',
-      className: '物理1801-1804',
-      schoolName: '天津外国语大学',
-      title: '思想道德修养与法律建设',
-      detail: 'toDetail',
-      join: 'join'
-    }, {
-      id: '2',
-      url: 'https://img.wsmpage.cn/szt2/course/sixiu.png',
-      className: '物理1801-1804',
-      schoolName: '天津外国语大学',
-      title: '思想道德修养与法律建设',
-      detail: 'toDetail',
-      join: 'join'
-    }, {
-      id: '3',
-      url: 'https://img.wsmpage.cn/szt2/course/sixiu.png',
-      className: '物理1801-1804',
-      schoolName: '天津外国语大学',
-      title: '思想道德修养与法律建设',
-      detail: 'toDetail',
-      join: 'join'
-    }, {
-      id: '4',
-      url: 'https://img.wsmpage.cn/szt2/course/sixiu.png',
-      className: '物理1801-1804',
-      schoolName: '天津外国语大学',
-      title: '思想道德修养与法律建设',
-      detail: 'toDetail',
-      join: 'join'
-    }, {
-      id: '5',
-      url: 'https://img.wsmpage.cn/szt2/course/sixiu.png',
-      className: '物理1801-1804',
-      schoolName: '天津外国语大学',
-      title: '思想道德修养与法律建设',
-      detail: 'toDetail',
-      join: 'join'
-    }]
+    // 所有课程信息
+    classList: null,
+    // 该用户 所加入课程信息
+    // myclass: [1, 2]
+  },
+
+  onLoad() {
+    this.setData({
+      classList: app.globalData.classList,
+      myclass: app.globalData.userInfo.myclass
+    })
   },
 
   tabSelect(e) {
@@ -71,7 +42,27 @@ Page({
   },
 
   join(e) {
-    console.log(22)
+    let classId = e.currentTarget.dataset.id;
+    
+    let newClassList = this.data.classList.map(item => {
+      if (item.id === classId) {
+        item.isJoin = true;
+      }
+      return item;
+    })
+
+    let newClass = this.data.classList.filter(item => item.id === classId)
+
+    console.log(newClass)
+
+    // 更新页面数据
+    this.setData({
+      classList: newClassList,
+    })
+
+    // 修改 前端 全局变量
+    app.globalData.userInfo.myclass.push(newClass);
+    app.globalData.userInfo.classList = newClassList;
   }
 
 })

@@ -10,6 +10,7 @@ Component({
     addGlobalClass: true,
   },
   data: {
+    // 学生 功能栏
     list: [{
       bgCls: 'bc-top',
       iconCls: 'cuIcon-group',
@@ -42,7 +43,7 @@ Component({
   pageLifetimes: {
     show() {
       // 页面加载时 判断用户有没有添加课程
-      let myclass = app.globalData.myclass
+      let myclass = app.globalData.userInfo.myclass
       // 如果之前添加了课程
       if (myclass) {
         this.setData({
@@ -59,7 +60,6 @@ Component({
 
       let dest = e.currentTarget.dataset.dest;
       toNext(router('common', 'courseList'), 'n')
-      
     }
   }
 })
