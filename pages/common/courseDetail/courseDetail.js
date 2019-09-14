@@ -16,6 +16,7 @@ Page({
   onReady() {
     let detail = app.globalData.detail;
     
+    // 
     this.setData({
       ...detail
     })

@@ -30,7 +30,10 @@
   </view>
 
   <!-- 如果用户添加课程 -->
-  <view></view>
+  <view class="item" wx:for="{{myclass}}" wx:key>
+    
+  </view>
+
 
   <view class="cu-tabbar-height"></view>
 </scroll-view>

@@ -48,7 +48,7 @@ Component({
       if (myclass) {
         this.setData({
           flag: false,
-          ...myclass
+          myclass
         })
       }
     }

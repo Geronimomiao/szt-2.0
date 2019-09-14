@@ -5,8 +5,17 @@ App({
     // 用户私有信息
     userInfo: 　{
       state: '',
-      // 用户加入 课程信息
-      myclass: [],
+      // 用户已加入课程
+      myclass: [{
+        id: '4',
+        url: 'https://img.wsmpage.cn/szt2/course/jindaishi.png',
+        className: '材料1901-1902',
+        schoolName: '天津外国语大学',
+        title: '中国近代史纲要',
+        detail: 'toDetail',
+        join: 'join',
+        isJoin: true
+      }],
     },
 
     // app 页面所需要的共享 信息
