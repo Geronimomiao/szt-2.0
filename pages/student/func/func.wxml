@@ -30,10 +30,26 @@
   </view>
 
   <!-- 如果用户添加课程 -->
-  <view class="item" wx:for="{{myclass}}" wx:key>
-    
+  <view class="cu-card article padding-sm" wx:else>
+    <view class="cu-item shadow" wx:for="{{myclass}}" wx:key>
+      <view class="cu-item shadow">
+      <view class="content">
+        <image src="{{item.url}}" mode="aspectFill" bindtap="{{item.detail}}" data-id="{{item.id}}"></image>
+        <view class="desc">
+          <view class="desc-top" bindtap="{{item.detail}}"  data-id="{{item.id}}">
+            <view class="class-name">{{item.title}}</view>
+            <view class="school text-grey">{{item.schoolName}}</view>
+          </view>
+          <!-- 坑 将布尔值存为字符串 会强行转为 true -->
+          <view class="desc-btm">
+            <view class="text-grey">{{item.className}}</view>
+            <view class="text-blue" bindtap="{{item.detail}}" data-id="{{item.id}}">进入</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    </view>
   </view>
-
 
   <view class="cu-tabbar-height"></view>
 </scroll-view>

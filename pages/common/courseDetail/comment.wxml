@@ -7,18 +7,25 @@
     </view>
   </view>
 
-  <view class="card" bindtap="toVideo">
+  <!-- 如果初始化 -->
+  <view class="card" bindtap="toVideo" wx:for="{{scene}}" wx:key>
     <view class="cu-card case">
       <view class="cu-item shadow">
         <view class="image">
-          <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix"></image>
-          <view class="cu-tag bg-blue">史诗</view>
+          <image src="{{item.img_url}}" mode="widthFix"></image>
+          <view class="cu-tag bg-blue">start</view>
           <view class="cu-bar bg-shadeBottom">
-            <text class="text-cut">我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭</text>
+            <text class="text-cut">{{item.msg}}</text>
           </view>
         </view>
       </view>
     </view>
+  </view>
+
+  <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
+  <view class="notFound" wx:if="{{!scene}}">
+    <view class="cuIcon-cut fz"></view>
+    <view class="padding margin text-gray">本节课暂未添加 情景再现</view>
   </view>
 
   <!-- 你的看法 -->
@@ -27,17 +34,28 @@
       <text class="cuIcon-title text-blue"></text> 你的看法
     </view>
   </view>
-  <!-- 问题 -->
-  <view class="point-msg bg-white margin padding-sm">
-    {{question}}
+
+  <!-- 如果老师初始化问题 -->
+  <view wx:if="{{question}}">
+    <!-- 问题 -->
+    <view class="point-msg bg-white margin padding-sm">
+      {{question}}
+    </view>
+    <!-- 选项 -->
+    <view class="point-chioce margin-top bg-white margin padding-sm">
+      <view class="title">你的选择</view>
+      <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+        <view class="picker text-blue">
+          {{index?picker[index]: picker[0]}}
+        </view>
+      </picker>
+    </view>
   </view>
-  <!-- 选项 -->
-  <view class="point-chioce margin-top bg-white margin padding-sm">
-		<view class="title">你的选择</view>
-		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
-			<view class="picker text-blue">
-        {{index?picker[index]: picker[0]}}
-			</view>
-		</picker>
-	</view>
+
+  <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
+  <view class="notFound" wx:if="{{!question}}">
+    <view class="cuIcon-bad fz"></view>
+    <view class="padding margin text-gray">请等待教师完善</view>
+  </view>
+
 </scroll-view>

@@ -13,10 +13,15 @@
   </view>
 
   <view class="title bg-white margin padding" wx:for="{{discuss}}" wx:key>
-    <text>{{item.title}}</text>
+    <text class="padding-left-sm">{{item.title}}</text>
     <text class="text-blue join" bindtap="toDiscuss">加入</text>
   </view>
 
+  <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
+  <view class="notFound" wx:if="{{!discuss}}">
+    <view class="cuIcon-bad fz"></view>
+    <view class="padding margin text-gray">请等待教师完善</view>
+  </view>
 
 </scroll-view>
 

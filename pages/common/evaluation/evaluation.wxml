@@ -50,7 +50,7 @@
     <view class="cu-bar bg-white justify-end">
       <view class="content">打分成功</view>
       <view class="action" bindtap="hideModal">
-        <text class="cuIcon-close text-red"></text>
+        <text class="cuIcon-close text-blue"></text>
       </view>
     </view>
     <view class="padding-xl">
@@ -58,7 +58,7 @@
     </view>
     <view class="cu-bar bg-white justify-end">
       <view class="action">
-        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+        <button class="cu-btn bg-blue margin-left" bindtap="hideModal">确定</button>
       </view>
     </view>
   </view>

@@ -41,6 +41,7 @@ Component({
     myclass: ''
   },
   pageLifetimes: {
+    // 近页面 返回时 触发的生命周期  
     show() {
       // 页面加载时 判断用户有没有添加课程
       let myclass = app.globalData.userInfo.myclass
@@ -53,6 +54,20 @@ Component({
       }
     }
   },
+
+  // tab 切换触发生命周期
+  ready() {
+    // 页面加载时 判断用户有没有添加课程
+    let myclass = app.globalData.userInfo.myclass
+    // 如果之前添加了课程
+    if (myclass) {
+      this.setData({
+        flag: false,
+        myclass
+      })
+    }
+  },
+
   methods: {
     toDest(e) {
       // 跳转至学生端 功能页 
@@ -60,6 +75,14 @@ Component({
 
       let dest = e.currentTarget.dataset.dest;
       toNext(router('common', 'courseList'), 'n')
-    }
+    },
+    
+    toDetail(e) {
+      let target = e.currentTarget.dataset.id;
+      app.globalData.detail = app.globalData.classList.filter(item => item.id === target).shift();
+      toNext(router('common', 'courseDetail'), 'n');
+    },
+
+
   }
 })

@@ -44,17 +44,17 @@ Component({
     }, {
       id: 1,
       type: 'image',
-        url: 'https://img.wsmpage.cn/szt2/news/2.png',
-        title: '国防部：驻香港部队有决心有信心有能力履行好驻军法赋予的职责使命',
-        info: '新华社北京8月29日电 国防部29日举行例行记者会，国防部新闻发言人任国强在回答中国人民解放军驻香港部队轮换有关问题时表示，驻香港部队坚决听从党中央、中央军委指挥，有决心、有信心、有能力履行好驻军法赋予的职责使命，守护香港长期繁荣稳定和长治久安。',
-        article_url: 'https://article.xuexi.cn/articles/index.html?study_style_id=feeds_default&study_comment_disable=0&art_id=1404574090669245052&source=share&share_to=wx_single&from=singlemessage'
+      url: 'https://img.wsmpage.cn/szt2/news/2.png',
+      title: '国防部：驻香港部队有决心有信心有能力履行好驻军法赋予的职责使命',
+      info: '新华社北京8月29日电 国防部29日举行例行记者会，国防部新闻发言人任国强在回答中国人民解放军驻香港部队轮换有关问题时表示，驻香港部队坚决听从党中央、中央军委指挥，有决心、有信心、有能力履行好驻军法赋予的职责使命，守护香港长期繁荣稳定和长治久安。',
+      article_url: 'https://article.xuexi.cn/articles/index.html?study_style_id=feeds_default&study_comment_disable=0&art_id=1404574090669245052&source=share&share_to=wx_single&from=singlemessage'
     }, {
       id: 2,
       type: 'image',
-        url: 'https://img.wsmpage.cn/szt2/news/3.png',
-        title: 'Keep your hands off Hong Kong: Readers urge US',
-        info: 'Editors note: Since February, many US politicians have openly commented on Hong Kong affairs and met with the opposition figures and radical protesters multiple times.Those meetings have only added fuel to the criminal deeds jeopardizing Hong Kong.China has repeatedly asked the US to stop interfering in other countries domestic affairs, but it seems the latter has no intention of withdrawing its "meddling hand". Netizens from home and abroad share their ideas.',
-        article_url: 'https://enapp.chinadaily.com.cn/a/201908/30/AP5d68be7ba310aba8ca8c3de2.html?from=singlemessage'
+      url: 'https://img.wsmpage.cn/szt2/news/3.png',
+      title: 'Keep your hands off Hong Kong: Readers urge US',
+      info: 'Editors note: Since February, many US politicians have openly commented on Hong Kong affairs and met with the opposition figures and radical protesters multiple times.Those meetings have only added fuel to the criminal deeds jeopardizing Hong Kong.China has repeatedly asked the US to stop interfering in other countries domestic affairs, but it seems the latter has no intention of withdrawing its "meddling hand". Netizens from home and abroad share their ideas.',
+      article_url: 'https://enapp.chinadaily.com.cn/a/201908/30/AP5d68be7ba310aba8ca8c3de2.html?from=singlemessage'
     }]
   },
   methods: {
@@ -70,7 +70,7 @@ Component({
     showNews(e) {
       let type = e.currentTarget.dataset.type;
       let article_id = e.currentTarget.dataset.cur;
-      
+
       let article_url = this.select(type, article_id)
       console.log(article_url)
       app.globalData.article_url = article_url;

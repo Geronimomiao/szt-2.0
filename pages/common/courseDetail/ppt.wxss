@@ -16,3 +16,15 @@
   justify-content: space-between;
 }
 
+.notFound {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fz {
+  font-size: 8rem;
+  color: rgb(213, 228, 251)
+}

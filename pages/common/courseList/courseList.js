@@ -61,7 +61,7 @@ Page({
     })
 
     // 修改 前端 全局变量
-    app.globalData.userInfo.myclass.push(newClass);
+    app.globalData.userInfo.myclass.push(newClass.pop());
     app.globalData.userInfo.classList = newClassList;
   }
 

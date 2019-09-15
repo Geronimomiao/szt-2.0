@@ -22,6 +22,12 @@
     </view>
   </view>
 
+  <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
+  <view class="notFound" wx:if="{{!classDetail}}">
+    <view class="cuIcon-bad fz"></view>
+    <view class="padding margin text-gray">请等待教师完善</view>
+  </view>
+
 </scroll-view>
 
 <view class="cu-modal {{modalName=='down'?'show':''}}">
