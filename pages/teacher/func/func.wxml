@@ -1,7 +1,21 @@
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
-  <view slot="content">课程</view>
+  <view slot="content">管理课程</view>
 </cu-custom>
 
 <scroll-view scroll-y class="scrollPage">
+
+  <!-- 教师创建了课程 -->
+  <view wx:if="{{myclass}}">
+  
+  </view>
+
+
+  <!-- 如果老师 未创建课程  -->
+  <view class="notFound" wx:else>
+    <view class="cuIcon-punch fz"></view>
+    <view class="padding margin text-gray">请于 pc 端创建课程 并添加课程的详细信息</view>
+  </view>
+
+
   <view class="cu-tabbar-height"></view>
 </scroll-view>

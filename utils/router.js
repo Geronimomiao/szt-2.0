@@ -5,18 +5,20 @@ const routerMap = {
     'home': '/pages/teacher/home/home'
   },
   'student': {
-    'home': '/pages/student/home/home'
+    'home': '/pages/student/home/home',
+    'evaluation': '/pages/student/evaluation/evaluation',
+    'courseList': '/pages/student/courseList/courseList',
+    'courseDetail': '/pages/student/courseDetail/courseDetail'
   },
   'common': {
     'video': '/pages/common/video/video',
     'register': '/pages/common/register/register',
     'login': '/pages/common/login/login',
     'select': '/pages/common/select/select',
-    'evaluation': '/pages/common/evaluation/evaluation',
+    
     'news': '/pages/common/news/news',
     'info': '/pages/common/info/info',
-    'courseList': '/pages/common/courseList/courseList',
-    'courseDetail': '/pages/common/courseDetail/courseDetail',
+    
     'chatRoom': '/pages/common/chatRoom/chatRoom',
     'notFound': '/pages/common/notFound/notFound'
   }

@@ -74,13 +74,13 @@ Component({
       // 考虑是否仅展示 学生加入的课程
 
       let dest = e.currentTarget.dataset.dest;
-      toNext(router('common', 'courseList'), 'n')
+      toNext(router('student', 'courseList'), 'n')
     },
     
     toDetail(e) {
       let target = e.currentTarget.dataset.id;
       app.globalData.detail = app.globalData.classList.filter(item => item.id === target).shift();
-      toNext(router('common', 'courseDetail'), 'n');
+      toNext(router('student', 'courseDetail'), 'n');
     },
 
 

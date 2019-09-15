@@ -1,0 +1,12 @@
+.notFound {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fz {
+  font-size: 9rem;
+  color: rgb(213, 228, 251)
+}

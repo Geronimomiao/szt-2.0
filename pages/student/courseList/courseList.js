@@ -35,10 +35,12 @@ Page({
     })
   },
 
+
+  // 只有加入 才能查看 未加入也可查看？？
   toDetail(e) {
     let target = e.currentTarget.dataset.id;
     app.globalData.detail = this.data.classList.filter(item => item.id === target).shift();
-    toNext(router('common', 'courseDetail'), 'n');
+    toNext(router('student', 'courseDetail'), 'n');
   },
 
   join(e) {

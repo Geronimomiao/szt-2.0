@@ -1,4 +1,4 @@
-@import "/pages/common/courseList/courseList.wxss";
+@import "/pages/student/courseList/courseList.wxss";
 
 .nav-list {
   margin: 1rem 0;

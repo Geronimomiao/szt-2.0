@@ -83,7 +83,7 @@ Component({
       })
     },
     toEvaluation() {
-      toNext(router('common', 'evaluation'), 'r')
+      toNext(router('student', 'evaluation'), 'r')
     }
   }
 })
