@@ -1,3 +1,6 @@
+@import "/pages/student/courseList/courseList.wxss";
+
+
 .notFound {
   height: 80vh;
   display: flex;
