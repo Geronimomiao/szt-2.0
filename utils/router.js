@@ -2,7 +2,8 @@
 
 const routerMap = {
   'teacher': {
-    'home': '/pages/teacher/home/home'
+    'home': '/pages/teacher/home/home',
+    'courseDetail': '/pages/teacher/courseDetail/courseDetail'
   },
   'student': {
     'home': '/pages/student/home/home',

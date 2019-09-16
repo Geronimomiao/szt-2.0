@@ -1,0 +1,45 @@
+<scroll-view scroll-y class="scrollPage">
+ 
+  <view wx:for="{{classDetail}}" wx:key>
+    <!-- 章节名称 -->
+    <view class="chapter-title margin-sm padding-xs" catchtap="changing" data-index="{{index}}">
+      <text>{{item.title}}</text>
+      <text class="cuIcon-fold" wx:if="{{(first === second) && (index === first)}}"></text>
+      <text class="cuIcon-unfold" wx:else></text>
+    </view>
+
+    <!-- 章节详情 -->
+    <view class="chapter-detail" style="height: {{(first === second) && (index === first) ? height : 0}}">
+      <view class="chapter-item margin-sm padding-lr-sm" wx:for="{{item.chapterItem}}" wx:key bindtap="down"  data-chapterIndex="{{index}}">
+        <view>
+          <text class="text-blue">{{item.type}}</text>
+          <text class="text-grey padding-left-xs">{{item.msg}}</text>
+        </view>
+        
+        <view class="cuIcon-focus" wx:if="{{item.download}}" ></view>
+        <view class="cuIcon-down" wx:else></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
+  <view class="notFound" wx:if="{{!classDetail}}">
+    <view class="cuIcon-bad fz"></view>
+    <view class="padding margin text-gray">请等待教师完善</view>
+  </view>
+
+</scroll-view>
+
+<view class="cu-modal {{modalName=='down'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-blue"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      课件以开始下载 请耐心等待
+    </view>
+  </view>
+</view>

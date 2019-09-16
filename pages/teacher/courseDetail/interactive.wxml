@@ -1,0 +1,36 @@
+<scroll-view scroll-y class="scrollPage">
+  
+  <!-- 选项 -->
+  <view class="select">
+    <view class="card bg-img shadow-blur padding margin" data-type="{{item.type}}" bindtap="{{item.func}}" style="background-image:url({{item.url}})" wx:for="{{card}}" wx:key>{{item.msg}}</view>
+  </view>
+  
+  <!-- 签到详情 -->
+  <view class="cu-bar bg-white margin-top-sm">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text> 签到详情
+    </view>
+  </view>
+
+  <!-- 如果教师端未发起签到 -->
+  <view class="notFound" wx:if="{{!checkIn}}">
+    <view class="cuIcon-post fz padding-top"></view>
+    <view class="padding margin text-gray">请点击发起签到 并等待</view>
+  </view>
+
+  <!-- 评教详情 -->
+  <view class="cu-bar bg-white margin-top-sm">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text> 评教详情
+    </view>
+  </view>
+
+  <!-- 如果教师端未发起评教 -->
+  <view class="notFound" wx:if="{{!evaluation}}">
+    <view class="cuIcon-group_fill fz padding-top"></view>
+    <view class="padding margin text-gray">请点击发起评教 并等待</view>
+  </view>
+
+</scroll-view>
+
+

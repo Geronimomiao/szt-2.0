@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ppt": "/pages/teacher/courseDetail/ppt",
+    "comment": "/pages/teacher/courseDetail/comment",
+    "interactive": "/pages/teacher/courseDetail/interactive"
+  }
+}

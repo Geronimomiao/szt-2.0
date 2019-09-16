@@ -1,0 +1,55 @@
+<scroll-view scroll-y class="scrollPage">
+
+  <!-- 情景再现 -->
+  <view class="cu-bar bg-white margin-top-sm">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text> 情景再现
+    </view>
+  </view>
+
+  <!-- 如果初始化 -->
+  <view class="card" bindtap="toVideo" wx:for="{{scene}}" wx:key>
+    <view class="cu-card case">
+      <view class="cu-item shadow">
+        <view class="image">
+          <image src="{{item.img_url}}" mode="widthFix"></image>
+          <view class="cu-tag bg-blue">start</view>
+          <view class="cu-bar bg-shadeBottom">
+            <text class="text-cut">{{item.msg}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
+  <view class="notFound" wx:if="{{!scene}}">
+    <view class="cuIcon-cut fz"></view>
+    <view class="padding margin text-gray">本节课暂未添加 情景再现</view>
+  </view>
+
+  <!-- 你的看法 -->
+  <view class="cu-bar bg-white margin-top-sm">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text> 看法统计
+    </view>
+  </view>
+
+  <!-- 如果老师初始化问题 -->
+  <view wx:if="{{question}}">
+    <!-- 问题 -->
+    <view class="point-msg bg-white margin padding-sm">
+      {{question}}
+    </view>
+    <!-- 各个选项所占比例 -->
+    
+
+  </view>
+
+  <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
+  <view class="notFound" wx:if="{{!question}}">
+    <view class="cuIcon-bad fz"></view>
+    <view class="padding margin text-gray">请等待教师完善</view>
+  </view>
+
+</scroll-view>

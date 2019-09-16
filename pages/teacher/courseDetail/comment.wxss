@@ -1,0 +1,27 @@
+.cu-bar {
+  min-height: 80rpx;
+}
+
+.point-msg {
+  border-radius: 5rpx;
+}
+
+.point-chioce {
+  border-radius: 5rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notFound {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fz {
+  font-size: 5rem;
+  color: rgb(213, 228, 251)
+}

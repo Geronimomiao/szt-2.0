@@ -1,0 +1,31 @@
+.select {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8rpx;
+}
+
+.title {
+  border-radius: 10rpx;
+}
+
+.join {
+  float: right;
+}
+
+.notFound {
+  height: 32vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fz {
+  font-size: 6.5rem;
+  color: rgb(213, 228, 251)
+}
