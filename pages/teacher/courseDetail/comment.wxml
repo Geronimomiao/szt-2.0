@@ -1,5 +1,4 @@
 <scroll-view scroll-y class="scrollPage">
-
   <!-- 情景再现 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
@@ -41,8 +40,15 @@
     <view class="point-msg bg-white margin padding-sm">
       {{question}}
     </view>
-    <!-- 各个选项所占比例 -->
+
+    <view class="padding-right tar">
+      <button class="cu-btn round line-blue" bindtap="show">查看选项比例</button>
+    </view>
     
+    <!-- 各个选项所占比例 -->
+    <view class="pie margin" >
+      <ec-canvas id="mychart-pie" canvas-id="mychart-pie" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+    </view>
 
   </view>
 

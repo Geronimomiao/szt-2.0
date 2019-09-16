@@ -28,7 +28,7 @@ Component({
       type: 'discuss',
       msg: '课程讨论',
       url: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
-      func: 'check'
+      func: 'toDiscuss'
     }, {
       type: 'checkIn',
       msg: '发起签到',
@@ -52,42 +52,6 @@ Component({
   methods: {
     toDiscuss() {
       toNext(router('common', 'chatRoom'), 'n')
-    },
-    check(e) {
-      // 通过 向服务器 发请求 判断教师端 是否开启某项功能
-
-      // 如果 开启 则根据开启的不同功能 调用不同方法
-      let type = e.currentTarget.dataset.type;
-      this[funcType[type]['func']]();
-
-      // 如果未开启 则弹窗提示
-      // this.unPremission()
-    },
-    checkIn() {
-      this.setData({
-        premisson: 1
-      })
-    },
-    unPremission() {
-      this.setData({
-        premisson: 0
-      })
-    },
-    result() {
-      // 根据服务器返回结果 判断判断签到是否成功
-
-      // 如果成功
-      this.setData({
-        premisson: 3
-      })
-    },
-    hideModal() {
-      this.setData({
-        premisson: null
-      })
-    },
-    toEvaluation() {
-      toNext(router('student', 'evaluation'), 'r')
     }
   }
 })

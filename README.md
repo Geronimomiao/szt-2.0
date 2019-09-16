@@ -12,6 +12,7 @@
 |    |- ColorUI // UI框架
 |    |- ali-icon // 字体图标
 |    |- my-icon // 一些自定义字体图标
+|    |- charts // 第三方图表库
 |
 |- utils
 |    |- api.js // 后台 api 
@@ -32,7 +33,12 @@
 |         |- chatRoom // 讨论区(通过 websocket 进行实时通信)
 |    |- teacher // 放教师相关页面
 |         |- home // 登录后 跳转页面
-|         |- func // 功能页面
+|         |- func // 管理课程页面
+|         |- classDetail // 课程详细信息
+|               |- courseDetail // 页面骨架
+|               |- ppt // 课件查看页面
+|               |- interactive // 交互页面
+|               |- comment // 评价页面 
 |    |- student // 放学生相关页面
 |         |- home // 登录后 跳转页面
 |         |- func // 功能页面
