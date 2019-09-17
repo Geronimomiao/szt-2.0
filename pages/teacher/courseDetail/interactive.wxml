@@ -1,10 +1,10 @@
 <scroll-view scroll-y class="scrollPage">
-  
+
   <!-- 选项 -->
   <view class="select">
     <view class="card bg-img shadow-blur padding margin" data-type="{{item.type}}" bindtap="{{item.func}}" style="background-image:url({{item.url}})" wx:for="{{card}}" wx:key>{{item.msg}}</view>
   </view>
-  
+
   <!-- 签到详情 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
@@ -16,6 +16,11 @@
   <view class="notFound" wx:if="{{!checkIn}}">
     <view class="cuIcon-post fz padding-top"></view>
     <view class="padding margin text-gray">请点击发起签到 并等待</view>
+  </view>
+
+  <!-- 将签到数据 以饼图 形式展示 -->
+  <view class="{{checkIn ? 'graph chart' : ''}}">
+    <ec-canvas id="mychart-check-pie" canvas-id="mychart-check-pie" ec="{{ ec }}"></ec-canvas>
   </view>
 
   <!-- 评教详情 -->
@@ -31,6 +36,11 @@
     <view class="padding margin text-gray">请点击发起评教 并等待</view>
   </view>
 
+  <!-- 将评教数据 以雷达图 形式展示 -->
+  <view class="{{evaluation ? 'graph chart' : ''}}">
+    <ec-canvas id="mychart-graph" canvas-id="mychart-graph" ec="{{ ec }}"></ec-canvas>
+  </view>
+
+
+
 </scroll-view>
-
-

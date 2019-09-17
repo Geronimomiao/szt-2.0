@@ -2,3 +2,13 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 	color: #fff;
 }
+
+/* 设置图标的默认样式 */
+.chart {
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

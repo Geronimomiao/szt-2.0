@@ -2,6 +2,13 @@
 
 * 基于 ColorUI 构建的小程序 分教师端 学生端
 
+**改版特点**
+
+* 使用 Websocket 进行实时通信
+* 将一些易变化 地方分离出来 并加上大量注释 有助于提高项目可维护性
+* 使用 部分策略模式对上一代版本进行重构
+* 手风琴动画(rpx 与 px 的转换)
+
 **项目目录结构**
 
 ```
@@ -9,10 +16,10 @@
 |- component // 可复用组件
 |
 |- lib // 第三方库
-|    |- ColorUI // UI框架
+|    |- ColorUI // UI框架(https://github.com/weilanwl/ColorUI)
 |    |- ali-icon // 字体图标
 |    |- my-icon // 一些自定义字体图标
-|    |- charts // 第三方图表库
+|    |- ec-canvas // ECharts 图表库(https://github.com/ecomfe/echarts-for-weixin)
 |
 |- utils
 |    |- api.js // 后台 api 

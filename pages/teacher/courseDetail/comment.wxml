@@ -46,8 +46,8 @@
     </view>
     
     <!-- 各个选项所占比例 -->
-    <view class="pie margin" >
-      <ec-canvas id="mychart-pie" canvas-id="mychart-pie" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+    <view class="chart margin pie" >
+      <ec-canvas id="mychart-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
     </view>
 
   </view>

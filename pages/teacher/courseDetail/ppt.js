@@ -98,6 +98,7 @@ Component({
 
       // 获取要下载 具体 课程信息
       let down = this.getDetail(e);
+      console.log(down)
       this.setData({
         [down]: true
       });

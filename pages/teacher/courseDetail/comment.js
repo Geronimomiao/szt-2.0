@@ -27,13 +27,8 @@ function setOption(chart) {
         value: 20,
         name: '科学文化修养'
       }],
-      itemStyle: {
-        emphasis: {
-          shadowBlur: 10,
-          shadowOffsetX: 0,
-          shadowColor: 'rgba(0, 2, 2, 0.3)'
-        }
-      }
+      
+  
     }]
   };
   chart.setOption(option);
@@ -60,11 +55,6 @@ Component({
   methods: {
     toVideo() {
       toNext(router('common', 'video'), 'n')
-    },
-
-    echartInit(e) {
-      console.log(e.detail.canvas, e.detail.width, e.detail.height)
-      initChart(e.detail.canvas, e.detail.width, e.detail.height);
     },
 
     show() {
