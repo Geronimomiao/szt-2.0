@@ -1,5 +1,5 @@
 <scroll-view scroll-y class="scrollPage">
- 
+
   <view wx:for="{{classDetail}}" wx:key>
     <!-- 章节名称 -->
     <view class="chapter-title margin-sm padding-xs" catchtap="changing" data-index="{{index}}">
@@ -10,14 +10,45 @@
 
     <!-- 章节详情 -->
     <view class="chapter-detail" style="height: {{(first === second) && (index === first) ? height : 0}}">
-      <view class="chapter-item margin-sm padding-lr-sm" wx:for="{{item.chapterItem}}" wx:key bindtap="down"  data-chapterIndex="{{index}}">
-        <view>
-          <text class="text-blue">{{item.type}}</text>
-          <text class="text-grey padding-left-xs">{{item.msg}}</text>
+      <!-- 每一章 -->
+      <view wx:for="{{item.chapterItem}}" wx:key data-chapterIndex="{{index}}" class="margin-bottom">
+        <!-- 每一小节 -->
+        <view wx:for="{{item.quarter}}" wx:key>
+          <!-- 标题 -->
+          <view class="chapter-item margin-sm">{{item.title}}</view>
+
+          <!-- 准备 -->
+          <view bindtap="changeBar" data-id="{{item.id}}" data-dest="1" wx:if="{{item.type==='准备'}}" class="chapter-item margin-sm padding-lr-sm">
+            <view>
+              <text class="text-blue">{{item.type}}</text>
+              <text class="text-grey padding-left-xs">{{item.msg}}</text>
+            </view>
+
+            <view class="cuIcon-notice"></view>
+            
+          </view>
+
+          <!-- 交互 -->
+          <view bindtap="changeBar" data-id="{{item.id}}" data-dest="2" wx:if="{{item.type==='互动'}}" class="chapter-item margin-sm padding-lr-sm">
+            <view>
+              <text class="text-blue">{{item.type}}</text>
+              <text class="text-grey padding-left-xs">{{item.msg}}</text>
+            </view>
+
+            <view class="cuIcon-share"></view>
+            
+          </view>
+
+          <!-- 课件 -->
+          <view bindtap="down" data-url="{{item.ppt_url}}" wx:if="{{item.type==='课件'}}" class="chapter-item margin-sm padding-lr-sm">
+            <view>
+              <text class="text-blue">{{item.type}}</text>
+              <text class="text-grey padding-left-xs">{{item.msg}}</text>
+            </view>
+
+            <view class="cuIcon-down"></view>
+          </view>
         </view>
-        
-        <view class="cuIcon-focus" wx:if="{{item.download}}" ></view>
-        <view class="cuIcon-down" wx:else></view>
       </view>
     </view>
   </view>
@@ -40,6 +71,21 @@
     </view>
     <view class="padding-xl">
       课件以开始下载 请耐心等待
+    </view>
+  </view>
+</view>
+
+
+<view class="cu-modal {{modalName=='select'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-blue"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      课程已选定
     </view>
   </view>
 </view>

@@ -8,13 +8,13 @@ Page({
     modalName: '',
     state: [{
       type: '课程结构',
-      func: 'tabSelect'
+      
     }, {
       type: '课前准备',
-      func: 'showModal'
+     
     }, {
       type: '实时互动',
-      func: 'showModal'
+      
     }],
   },
 
