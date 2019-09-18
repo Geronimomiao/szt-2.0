@@ -1,15 +1,12 @@
 @import "/static/css/animate.wxss";
 
-
-
-
 .point-container {
   height: 100vh;
   position: relative;
   width:100%;
   min-height:100%;
   background-size:100% 100%;
-  background: url("https://img.wsmpage.cn/szt2/bg/1.png")
+  background-image: url("https://img.wsmpage.cn/szt2/bg/bg3.png")
 }
 
 .bottom {
@@ -20,7 +17,6 @@
   background-color: #f0f0f0;
   
 }
-
 
 .choose {
   margin-top: 10vh;
