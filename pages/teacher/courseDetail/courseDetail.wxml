@@ -11,12 +11,26 @@
   </scroll-view>
 
   <!-- 课件展示 -->
-  <ppt wx:if="{{TabCur === 0}}"></ppt>
+  <ppt bind:run="changeType" wx:if="{{TabCur === 0}}"></ppt>
 
   <!-- 课程评价 -->
   <comment wx:if="{{TabCur === 1}}"></comment>
 
   <!-- 课堂互动 -->
-  <interactive wx:if="{{TabCur === 2}}"></interactive>
+  <interactive  wx:if="{{TabCur === 2}}"></interactive>
 
 </scroll-view>
+
+<view class="cu-modal {{modalName=='tip'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-blue"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      请先选择 所有观看课程的节数
+    </view>
+  </view>
+</view>

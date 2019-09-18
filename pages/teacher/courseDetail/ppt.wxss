@@ -9,6 +9,8 @@
   /* 动画 高度单位必须为 px */
   transition: height .3s;
   overflow:hidden;
+
+  height: auto;
 }
 
 .chapter-item {

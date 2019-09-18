@@ -62,7 +62,10 @@ App({
       detail: 'toDetail',
       join: 'join',
       isJoin: true
-    }]
+    }],
+
+    // 通过 claddId 获取 课前准备 实时互动 的信息
+    classId: ''
   },
 
   onLaunch() {
