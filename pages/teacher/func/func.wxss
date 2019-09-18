@@ -1,4 +1,23 @@
-@import "/pages/student/courseList/courseList.wxss";
+.cu-card.article> .cu-item {
+  padding-top: 30rpx;
+  margin-bottom: 0rpx;
+}
+
+.desc-top .class-name {
+  font-weight: 550;
+}
+
+.desc-top .school {
+  font-size: 0.8rem;
+}
+
+.desc-btm {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+
 
 
 .notFound {
