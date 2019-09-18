@@ -1,8 +1,9 @@
 {
   "pages": [
     
-    "pages/teacher/home/home",
     "pages/student/home/home",
+    "pages/teacher/home/home",
+    
     "pages/student/evaluation/evaluation",
     "pages/student/courseList/courseList",
     
