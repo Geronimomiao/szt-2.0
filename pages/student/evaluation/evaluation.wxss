@@ -6,7 +6,7 @@
   width:100%;
   min-height:100%;
   background-size:100% 100%;
-  background-image: url("https://img.wsmpage.cn/szt2/bg/bg3.png")
+  background-image: url("https://img.wsmpage.cn/szt2/bg/bg3.png");
 }
 
 .bottom {
@@ -73,14 +73,14 @@
 }
 
 .select-2 {
-  background: url("https://img.wsmpage.cn/szt2/bg/cloud.png")
+  background: url("https://img.wsmpage.cn/szt2/bg/cloud.png");
 }
 
 .select-3 {
-  background: url("https://img.wsmpage.cn/szt2/bg/badCloud.png")
+  background: url("https://img.wsmpage.cn/szt2/bg/badCloud.png");
 }
 
 .select-4 {
-  background: url("https://img.wsmpage.cn/szt2/bg/wind.png")
+  background: url("https://img.wsmpage.cn/szt2/bg/wind.png");
 }
 
