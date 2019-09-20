@@ -1,10 +1,16 @@
+import Api from './utils/api.js'
+
 //app.js
 App({
 
   globalData: {
     // 用户私有信息
     userInfo: 　{
+      token: '',
       state: '',
+      name: '',
+      number: '',
+      school: '',
       // 用户已加入课程
       myclass: [{
         id: '4',
@@ -77,6 +83,8 @@ App({
         this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
       }
     })
-  }
+  },
+
+  api: new Api()
 
 })

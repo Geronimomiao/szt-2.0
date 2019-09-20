@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/common/launch/launch",
+    "pages/common/register/register",
+
+    
     "pages/student/home/home",
     "pages/teacher/home/home",
     
@@ -16,7 +19,7 @@
   
     "pages/common/select/select",
     "pages/common/login/login",
-    "pages/common/register/register",
+    
     
     "pages/common/video/video",
     "pages/common/notFound/notFound"

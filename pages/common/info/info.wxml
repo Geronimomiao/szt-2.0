@@ -16,7 +16,7 @@
           <text class="text-grey">学校</text>
         </view>
         <view class='item'>
-          <text class="text-grey">天津工业大学</text>
+          <text class="text-grey">{{school}}</text>
         </view>
       </view>
     </view>
@@ -40,7 +40,7 @@
           <text class="text-grey">姓名</text>
         </view>
         <view class='item'>
-          <open-data type="userNickName" class="text-grey" lang="zh_CN"></open-data>
+          <text class="text-grey">{{name}}</text>
         </view>
       </view>
     </view>
@@ -52,7 +52,7 @@
           <text class="text-grey">学工号</text>
         </view>
         <view class='item'>
-          <text class="text-grey">1711650121</text>
+          <text class="text-grey">{{number}}</text>
         </view>
       </view>
     </view>
@@ -61,4 +61,3 @@
 
   </view>
 </view>
-

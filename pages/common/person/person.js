@@ -12,6 +12,8 @@ Component({
     addGlobalClass: true,
   },
   data: {
+    number: '',
+    name: '',
     list: [{
       icon: 'list',
       msg: '我的课件',
@@ -32,6 +34,23 @@ Component({
       msg: '帮助与反馈'
     }]
   },
+
+  // pageLifetimes: {
+  //  show(){
+  //     this.setData({
+  //       number: app.globalData.userInfo.number,
+  //       name: app.globalData.userInfo.name
+  //     })
+  //   } 
+  // },
+
+  ready() {
+    this.setData({
+      number: app.globalData.userInfo.number,
+      name: app.globalData.userInfo.name
+    })
+  },
+
   methods: {
     notFound(e) {
       // console.log(e.currentTarget.dataset.source)

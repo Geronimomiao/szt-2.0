@@ -11,9 +11,9 @@
             </view>
             <view>
               <view class="username">
-                <open-data type="userNickName" class="text-white" lang="zh_CN"></open-data>
+                {{name}}
               </view>
-              <view class="userid">学工号: 1711650121</view>
+              <view class="userid">学工号: {{number}}</view>
             </view>
 
           </view>

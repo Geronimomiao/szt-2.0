@@ -8,15 +8,15 @@
   <form class="form z-index">
     <view class='item'>
       <text class="iconfont icon-hezuohuobanmiyueguanli"></text>
-      <input placeholder="请输入姓名"></input>
+      <input placeholder="请输入姓名" bindinput="nameInput"></input>
     </view>
     <view class='item'>
       <text class="iconfont icon-xuexiao1"></text>
-      <input placeholder="请输入学校名称"></input>
+      <input placeholder="请输入学校名称" bindinput="schoolInput"></input>
     </view>
     <view class='item'>
       <text class="iconfont icon-zhanghaoquanxianguanli"></text>
-      <input placeholder="请输入学号/教工号"></input>
+      <input placeholder="请输入学号/教工号" bindinput="numberInput"></input>
     </view>
   </form>
   <view class="reg z-index">
