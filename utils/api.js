@@ -16,6 +16,10 @@ class Api {
     console.error(res)
   }
 
+  /**
+   * 用户信息接口
+   */
+  
   // 用户注册
   userRegister(state ,school, name, number) {
     let pathSelect = {
@@ -34,7 +38,6 @@ class Api {
 
   }
 
-
   // 用户登录(获取用户 token )(使用 姓名 学号 登录) 
   userLogin(name, number) {
     let data = {
@@ -49,6 +52,44 @@ class Api {
   userInfo(token) {
     let data = { token }
     return this._request.getRequest(this._baseUrl + '/user_info', data).then(res => res.data)
+  }
+
+
+  /**
+   * 新闻列表接口
+   */
+  
+  getNews(type) {
+    let data = { type }
+    return this._request.getRequest(this._baseUrl + '/get_post', data).then(res => res.data)
+  }
+
+  /**
+   * 课程信息接口
+   */
+  
+  // 获取全部课程 
+  getAllClass() {
+    return this._request.getRequest(this._baseUrl + '/classes').then(res => res.data)
+  }
+
+  // 根据课程 id 查 课程的具体信息
+  getClassInfo(class_id) {
+    let data = {
+      class_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/classes', data).then(res => res.data)
+  }
+
+  // 给学生添加课程
+  addClass(token, class_id) {
+    let data = {
+      token,
+      class_id
+    }
+
+    return this._request.postRequest(this._baseUrl + '/classes', data).then(res => res.data)
   }
 
 }

@@ -25,8 +25,8 @@
           <!-- 坑 将布尔值存为字符串 会强行转为 true -->
           <view class="desc-btm">
             <view class="text-grey">{{item.className}}</view>
-            <view class="text-grey" wx:if="{{item.isJoin}}" data-id="{{item.id}}">已加入</view>
-            <view class="text-blue" bindtap="{{item.join}}" data-id="{{item.id}}" wx:else>加入</view>
+            <view class="text-grey" data-id="{{item.id}}" wx:if="{{!item.isJoin}}">已加入</view>
+            <view class="text-blue" data-id="{{item.id}}" wx:else bindtap="{{item.join}}">加入</view>
           </view>
         </view>
       </view>

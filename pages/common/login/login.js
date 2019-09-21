@@ -38,6 +38,7 @@ Page({
     // 用户登录接口
     app.api.userLogin(name, number)
       .then(res => {
+        console.log(res)
         app.globalData.userInfo.token = res.data
         
         if(res.code === 10010) {
@@ -57,6 +58,13 @@ Page({
           app.globalData.userInfo.name = res.data.name
           app.globalData.userInfo.school = res.data.school
           app.globalData.userInfo.number = res.data.number
+          
+          res.data.class.map(item => {
+            // 获取 学生课程 具体信息
+            app.api.getClassInfo(item.class_id).then(res=>{
+              app.globalData.userInfo.myclass = app.globalData.userInfo.myclass.concat(res.data) 
+            })
+          }) 
         })
 
         let state = app.globalData.userInfo.state

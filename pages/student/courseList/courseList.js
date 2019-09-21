@@ -23,10 +23,17 @@ Page({
   },
 
   onLoad() {
-    this.setData({
-      classList: app.globalData.classList,
-      myclass: app.globalData.userInfo.myclass
+    app.api.getAllClass().then(res => {
+      app.globalData.classList = res.data
+      this.setData({
+        classList: res.data
+      })
     })
+
+    // this.setData({
+    //   classList: app.globalData.classList,
+    //   myclass: app.globalData.userInfo.myclass
+    // })
   },
 
   tabSelect(e) {
@@ -48,14 +55,12 @@ Page({
     
     let newClassList = this.data.classList.map(item => {
       if (item.id === classId) {
-        item.isJoin = true;
+        item.isJoin = false;
       }
       return item;
     })
 
     let newClass = this.data.classList.filter(item => item.id === classId)
-
-    console.log(newClass)
 
     // 更新页面数据
     this.setData({
@@ -65,6 +70,11 @@ Page({
     // 修改 前端 全局变量
     app.globalData.userInfo.myclass.push(newClass.pop());
     app.globalData.userInfo.classList = newClassList;
+
+    let token = app.globalData.userInfo.token
+    app.api.addClass(token, classId).then(res => {
+      console.log(res)
+    })
   }
 
 })

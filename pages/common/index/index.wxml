@@ -6,8 +6,7 @@
 <scroll-view scroll-y class="scrollPage">
   <swiper class="screen-swiper square-dot banner" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
     <swiper-item wx:for="{{bannerList}}" wx:key data-cur="{{item.id}}" data-type="banner" bindtap="showNews" class="border-radius">
-      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
-      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      <image src="{{item.url}}" mode="aspectFill"></image>
       <view class="swiper-word">
         <view class="word">
           <view>{{item.title}}</view>
