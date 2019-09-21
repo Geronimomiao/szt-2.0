@@ -37,6 +37,7 @@ Component({
       url: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
       func: 'check'
     }],
+    // 讨论区
     discuss: [{
       title: '有哪些第一次读到便震撼的句子?'
     }, {

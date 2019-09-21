@@ -31,7 +31,8 @@ Component({
       source: 'message'
     }, {
       icon: 'settings',
-      msg: '帮助与反馈'
+      msg: '注销当前账号',
+      func: 'logOut'
     }]
   },
 
@@ -53,7 +54,6 @@ Component({
 
   methods: {
     notFound(e) {
-      // console.log(e.currentTarget.dataset.source)
       // 默认用户 没有任何资源
       let type = e.currentTarget.dataset.source;
       app.globalData.sourceState = type;
@@ -61,6 +61,9 @@ Component({
     },
     toInfo() {
       toNext(router('common', 'info'), 'n')
+    },
+    logOut() {
+      toNext(router('common', 'login'), 'r')
     }
   }
 })
