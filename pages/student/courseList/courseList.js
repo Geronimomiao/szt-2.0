@@ -18,22 +18,13 @@ Page({
     }],
     // 所有课程信息
     classList: null,
-    // 该用户 所加入课程信息
-    // myclass: [1, 2]
+    
   },
 
   onLoad() {
-    app.api.getAllClass().then(res => {
-      app.globalData.classList = res.data
-      this.setData({
-        classList: res.data
-      })
+    this.setData({
+      classList: app.globalData.classList
     })
-
-    // this.setData({
-    //   classList: app.globalData.classList,
-    //   myclass: app.globalData.userInfo.myclass
-    // })
   },
 
   tabSelect(e) {
@@ -55,7 +46,7 @@ Page({
     
     let newClassList = this.data.classList.map(item => {
       if (item.id === classId) {
-        item.isJoin = false;
+        item.isJoin = true;
       }
       return item;
     })

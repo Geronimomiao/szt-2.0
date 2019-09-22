@@ -13,6 +13,11 @@ Page({
     modalName: ''
   },
 
+  onLoad() {
+    
+  },
+
+
   toSelect() {
     toNext(router('common', 'select'), 'n')
   },
@@ -38,8 +43,13 @@ Page({
     // 用户登录接口
     app.api.userLogin(name, number)
       .then(res => {
-        console.log(res)
         app.globalData.userInfo.token = res.data
+
+
+        // 获取所有 课程信息
+        app.api.getAllClass(res.data, res.msg).then(res => {
+          app.globalData.classList = res.data
+        })
         
         if(res.code === 10010) {
           app.globalData.userInfo.state = res.msg
@@ -50,6 +60,7 @@ Page({
           });
         }
         
+        return res.data
       })
       .then(token => {
         // 根据用户 token 查用户信息

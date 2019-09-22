@@ -18,6 +18,8 @@ Component({
     this.setData({
       myclass: app.globalData.userInfo.myclass
     })
+
+    console.log(this.data.myclass)
   },
 
   methods: {

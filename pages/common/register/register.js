@@ -36,16 +36,28 @@ Page({
     app.globalData.userInfo.school = school
     app.globalData.userInfo.number = number
 
+    
+
     app.api.userRegister(state, school, name, number).then(res => {
       if (res.code === 10010) {
         app.globalData.userInfo.token = res.data
+        console.log(res.data)
+        // 获取所有 课程信息
+        app.api.getAllClass(res.data).then(res => {
+          console.log(res)
+          app.globalData.classList = res.data
+        })
       } else if(res.code === 10011){
         app.globalData.userInfo.token = res.data.token
+
+        // 获取所有 课程信息
+        app.api.getAllClass(res.data.token).then(res => {
+          app.globalData.classList = res.data
+        })
       }
 
       toNext(router(state, 'home'), 'r')
     })
   
-    
   }
 })

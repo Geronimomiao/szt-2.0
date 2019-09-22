@@ -79,6 +79,7 @@ Component({
     
     toDetail(e) {
       let target = e.currentTarget.dataset.id;
+      app.globalData.classId = target; 
       app.globalData.detail = app.globalData.classList.filter(item => item.id === target).shift();
       toNext(router('student', 'courseDetail'), 'n');
     },

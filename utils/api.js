@@ -31,7 +31,7 @@ class Api {
       school,
       name,
       number,
-      openid: 1025
+      openid: 'rgdfgfgrs'
     }
 
     return this._request.postRequest(this._baseUrl + pathSelect[state], data).then(res => res.data)
@@ -67,19 +67,13 @@ class Api {
   /**
    * 课程信息接口
    */
-  
-  // 获取全部课程 
-  getAllClass() {
-    return this._request.getRequest(this._baseUrl + '/classes').then(res => res.data)
-  }
-
-  // 根据课程 id 查 课程的具体信息
-  getClassInfo(class_id) {
-    let data = {
-      class_id
+  getAllClass(token, state) {
+    if(state === 'student') {
+      return this._request.getRequest(this._baseUrl + '/check_class', { token }).then(res => res.data)
+    } else if (state === 'teacher') {
+      return this._request.getRequest(this._baseUrl + '/classes').then(res => res.data)
     }
-
-    return this._request.getRequest(this._baseUrl + '/classes', data).then(res => res.data)
+    
   }
 
   // 给学生添加课程
@@ -90,6 +84,36 @@ class Api {
     }
 
     return this._request.postRequest(this._baseUrl + '/classes', data).then(res => res.data)
+  }
+
+  // 根据课程id 查 课程的基本具体信息
+  getClassInfo(class_id) {
+    let data = {
+      class_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/classes', data).then(res => res.data)
+  }
+
+  // 根据课程id 查课程的章节信息
+  getClassDetail(class_id) {
+    let data = {
+      class_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/show_details', data).then(res => res.data)
+  }
+
+  /**
+   * 聊天室接口
+   */
+
+  addGroup() {
+
+  }
+
+  sendMeg() {
+
   }
 
 }
