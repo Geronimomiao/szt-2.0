@@ -100,7 +100,6 @@ class Api {
     let data = {
       class_id
     }
-
     return this._request.getRequest(this._baseUrl + '/show_details', data).then(res => res.data)
   }
 
@@ -108,12 +107,24 @@ class Api {
    * 聊天室接口
    */
 
-  addGroup() {
-
+  // 加入群组
+  addGroup(token, group_id, client_id) {
+    let data = {
+      token,
+      group_id,
+      client_id
+    }
+    return this._request.getRequest(this._baseUrl + '/add_group', data).then(res => res.data)
   }
 
-  sendMeg() {
-
+  // 聊天
+  sendMeg(token, group_id, message) {
+    let data = {
+      token,
+      group_id,
+      message
+    }
+    return this._request.getRequest(this._baseUrl + '/talk', data).then(res => res.data)
   }
 
 }

@@ -11,6 +11,7 @@
     <view class="cu-avatar radius" style="background-image:url(http://wsmpage.cn/wsm/mmexport1534568374255.jpg);"></view>
     <view class="date">2018年3月23日 13:23</view>
   </view>
+
   <view class="cu-item">
     <view class="cu-avatar radius" style="background-image:url(http://wsmpage.cn/yan/zanzibar%20sunset.jpg);"></view>
     <view class="main">
@@ -20,16 +21,6 @@
     </view>
     <view class="date "> 13:23</view>
   </view>
-  
-  
-  <view class="cu-item self">
-    <view class="main">
-      <image src="http://wsmpage.cn/wsm/IMG_20190801_164021.jpg" class="radius" mode="widthFix"></image>
-    </view>
-    <view class="cu-avatar radius" style="background-image:url(http://wsmpage.cn/wsm/mmexport1534568374255.jpg);"></view>
-    <view class="date"> 13:23</view>
-  </view>
-  
   
   <view class="cu-item">
     <view class="cu-avatar radius" style="background-image:url(http://wsmpage.cn/yan/Medieval%20morning.jpg);"></view>
