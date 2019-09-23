@@ -25,8 +25,8 @@ App({
     // 所有课程信息
     classList: '',
 
-    // 通过 claddId 获取 课前准备 实时互动 的信息
-    classId: ''
+    // 通过 小节ID 获取 课前准备 实时互动 的信息
+    quarterId: ''
   },
 
   onLaunch() {

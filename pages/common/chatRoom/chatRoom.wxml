@@ -1,41 +1,28 @@
 <cu-custom bgColor="bg-blue" isBack="{{true}}">
-<view slot="content">讨论</view>
+  <view slot="content">讨论</view>
 </cu-custom>
 <view class="cu-chat">
-  <view class="cu-item self">
+  <view class="cu-item {{item.self===true ? 'self': ''}}" wx:for="{{chatList}}" wx:key>
+    <view class="cu-avatar radius" style='background-image:url("{{item.img}}");' wx:if="{{item.self===false}}">
+      <view class="name text-grey">{{item.name}}</view>
+    </view>
+
     <view class="main">
-      <view class="content bg-green shadow">
-        <text>喵喵喵！喵喵喵！喵喵喵！喵喵！喵喵！！喵！喵喵喵！</text>
+      <view class="content shadow {{item.self===true ? 'bg-green': ''}}">
+        <text>{{item.message}}</text>
       </view>
     </view>
-    <view class="cu-avatar radius" style="background-image:url(http://wsmpage.cn/wsm/mmexport1534568374255.jpg);"></view>
-    <view class="date">2018年3月23日 13:23</view>
+    <view class="cu-avatar radius" style='background-image:url("{{item.img}}");' wx:if="{{item.self===true}}">
+      <view class="name text-grey">{{item.name}}</view>
+    </view>
   </view>
 
-  <view class="cu-item">
-    <view class="cu-avatar radius" style="background-image:url(http://wsmpage.cn/yan/zanzibar%20sunset.jpg);"></view>
-    <view class="main">
-      <view class="content shadow">
-        <text>喵喵喵！喵喵喵！</text>
-      </view>
-    </view>
-    <view class="date "> 13:23</view>
-  </view>
-  
-  <view class="cu-item">
-    <view class="cu-avatar radius" style="background-image:url(http://wsmpage.cn/yan/Medieval%20morning.jpg);"></view>
-    <view class="main">
-      <view class="content shadow">
-       皮卡皮卡
-      </view>      
-    </view>
-    <view class="date">13:23</view>
-  </view>
+  <view class="cu-tabbar-height"></view>
 </view>
 
 <view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
-  
-  <input class="solid-bottom" bindfocus="InputFocus" bindblur="InputBlur" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
-  
-  <button class="cu-btn bg-green shadow">发送</button>
+
+  <input class="solid-bottom" adjust-position="{{false}}" focus="{{false}}" value="{{inputTxt}}" maxlength="300" cursor-spacing="10" bindinput="getMsg" bindfocus="InputFocus" bindblur="InputBlur"></input>
+
+  <button class="cu-btn bg-green shadow" bindtap="sendMsg">发送</button>
 </view>

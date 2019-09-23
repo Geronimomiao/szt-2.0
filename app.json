@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/common/chatRoom/chatRoom",
     "pages/common/login/login",
+    "pages/common/chatRoom/chatRoom",
+    
     "pages/teacher/home/home",
     
     

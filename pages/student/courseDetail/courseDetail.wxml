@@ -17,7 +17,7 @@
   <comment wx:if="{{TabCur === 1}}"></comment>
 
   <!-- 课堂互动 -->
-  <interactive  wx:if="{{TabCur === 2}}"></interactive>
+  <interactive wx:if="{{TabCur === 2}}"></interactive>
 
 </scroll-view>
 

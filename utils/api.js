@@ -31,7 +31,7 @@ class Api {
       school,
       name,
       number,
-      openid: 'rgdfgfgrs'
+      openid: Math.random().toString(36).slice(-8)
     }
 
     return this._request.postRequest(this._baseUrl + pathSelect[state], data).then(res => res.data)
@@ -100,7 +100,17 @@ class Api {
     let data = {
       class_id
     }
+
     return this._request.getRequest(this._baseUrl + '/show_details', data).then(res => res.data)
+  }
+
+  // 根据小节信息 查小节对应的情景再现
+  getVideoUrl(quarter_id) {
+    let data = {
+      quarter_id
+    }
+    
+    return this._request.getRequest(this._baseUrl + '/quarter', data).then(res => res.data)
   }
 
   /**
