@@ -22,6 +22,98 @@ Page({
     url: ''
   },
 
+  onLoad() {
+    this.linkSocket();
+    this.heartBeat();
+  },
+
+  onUnload() {
+    wx.onSocketClose(res => {
+      console.log('WebSocket已关闭！')
+    })
+  },
+
+  // 心跳重连(向 socket 发信息)
+  sendSocketMessage(msg) {
+    wx.sendSocketMessage({
+      data: msg
+    })
+  },
+
+  // 心跳重连
+  heartBeat() {
+    setInterval(() => {
+      this.sendSocketMessage(11)
+    }, 30000)
+  },
+
+  //连接socket
+  linkSocket() {
+    let that = this
+
+    wx.connectSocket({
+      url: 'wss://szt.c5ppc.cn/wss',
+      success() {
+        console.log('连接成功')
+        wx.onSocketError((res) => {
+          console.log('WebSocket连接打开失败')
+          that.linkSocket()
+        })
+        wx.onSocketClose((res) => {
+          console.log('WebSocket 已关闭！')
+          that.linkSocket()
+        })
+      },
+
+
+    })
+
+    wx.onSocketMessage((res) => {
+      let msg = JSON.parse(res.data)
+      console.log(msg)
+      if (msg.type === 'init') {
+        // 获取 client_id
+        let client_id = JSON.parse(res.data).client_id
+        that.addGroup(client_id)
+      } else if (msg.type === 'talk') {
+        // 从服务端 收到消息
+        that.setMsgList(msg)
+      }
+
+    })
+  },
+
+  // 加入群组
+  addGroup(client_id) {
+
+    let token = app.globalData.userInfo.token
+    let group_id = '1234'
+
+    app.api.addGroup(token, group_id, client_id)
+  },
+
+  // 发消息
+  sendMsg(msg) {
+
+    let token = app.globalData.userInfo.token
+    let group_id = '1234'
+
+    app.api.sendMeg(token, group_id, this.data.msg)
+
+    // 发送信息后 清空输入框
+    this.setData({
+      inputTxt: '',
+      msg: null
+    })
+  },
+
+  // 获取用户输入信息
+  getMsg(e) {
+    this.setData({
+      msg: e.detail.value
+    })
+  },
+
   onReady(res) {
     // 获取视频地址信息
     let quarter_id = app.globalData.quarterId

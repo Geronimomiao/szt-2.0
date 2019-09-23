@@ -3,6 +3,7 @@ import {
   toNext
 } from '../../../utils/router.js';
 import * as echarts from '../../../lib/ec-canvas/echarts.js';
+const app = getApp();
 
 function setOptionGraph(chart) {
   const option = {
@@ -162,10 +163,33 @@ Component({
       toNext(router('common', 'chatRoom'), 'n')
     },
     showCheck() {
+      
+      // 教师发起签到
+      let class_id = app.globalData.classId
+      app.api.teacherStartSign(class_id).then(res => {
+        console.log(res)
+      })
+
+      setTimeout(() => {
+        this.getCheck()
+      }, 6000)  
+
+      
+    },
+
+    // 获取学生签到信息
+    getCheck() {
+      // 教师结束签到
+      let class_id = app.globalData.classId
+      app.api.teacherStopSign(class_id).then(res => {
+        console.log(res)
+      })
+
       this.setData({
         checkIn: true
       });
 
+      // 展示图表信息
       this.ecComponent = this.selectComponent('#mychart-check-pie');
       this.ecComponent.init((canvas, width, height) => {
         const chart = echarts.init(canvas, null, {
@@ -177,6 +201,7 @@ Component({
         return chart;
       });
     },
+
     showEvaluation() {
       this.setData({
         evaluation: true
@@ -193,5 +218,6 @@ Component({
         return chart;
       });
     }
+
   }
 })

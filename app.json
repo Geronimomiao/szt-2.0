@@ -1,17 +1,18 @@
 {
   "pages": [
+    
     "pages/common/login/login",
+    
+    "pages/common/register/register",
     "pages/common/chatRoom/chatRoom",
     
     "pages/teacher/home/home",
-    
+    "pages/student/evaluation/evaluation",
     
     "pages/student/home/home",   
 
     "pages/common/launch/launch",
-    "pages/common/register/register",
     
-    "pages/student/evaluation/evaluation",
     "pages/student/courseList/courseList",
     "pages/common/info/info",
     "pages/student/func/func",

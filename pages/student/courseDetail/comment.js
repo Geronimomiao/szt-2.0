@@ -31,10 +31,14 @@ Component({
     },
 
     PickerChange(e) {
-      console.log(e);
       this.setData({
         index: e.detail.value
       })
+
+      // 学生端投票
+      let choice = this.data.picker[e.detail.value]
+      let quarter_id = app.globalData.quarterId;
+      app.api.studentVote(quarter_id, choice)
     },
 
     getInfo() {

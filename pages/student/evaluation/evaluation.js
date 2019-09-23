@@ -1,7 +1,10 @@
+const app = getApp()
+
 import {
   router,
   toNext
 } from '../../../utils/router.js';
+
 
 Page({
   data: {
@@ -15,7 +18,7 @@ Page({
   choice(e) {
     let point = e.currentTarget.dataset.point
     let selectClass = e.currentTarget.dataset.selectclass
-    console.log(e.currentTarget.dataset)
+    
     this.setData({
       hasSelected: true,
       selectClass: selectClass,
@@ -26,6 +29,12 @@ Page({
         modalName: 'DialogModal'
       })
     }, 1300)
+
+    let quarter_id = app.globalData.quarterId
+    let choice = e.currentTarget.dataset.choice
+    app.api.studentEvaluation(quarter_id, choice).then(res => {
+      console.log(res)
+    })
   },
 
   hideModal() {

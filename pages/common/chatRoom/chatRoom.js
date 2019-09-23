@@ -74,7 +74,7 @@ Page({
   addGroup(client_id) {
 
     let token = app.globalData.userInfo.token
-    let group_id = '1234'
+    let group_id = app.globalData.quarterId
 
     app.api.addGroup(token, group_id, client_id)
   },
@@ -83,7 +83,7 @@ Page({
   sendMsg(msg) {
     
     let token = app.globalData.userInfo.token
-    let group_id = '1234'
+    let group_id = app.globalData.quarterId
 
     app.api.sendMeg(token, group_id, this.data.msg)
 

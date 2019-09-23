@@ -48,6 +48,7 @@ Page({
 
         // 获取所有 课程信息
         app.api.getAllClass(res.data, res.msg).then(res => {
+          console.log(res)
           app.globalData.classList = res.data
         })
         

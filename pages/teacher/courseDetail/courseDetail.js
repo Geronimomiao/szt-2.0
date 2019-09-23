@@ -49,7 +49,6 @@ Page({
 
   
   changeType(dest) {
-    console.log(dest.detail)
     this.setData({
       flag: false,
     })

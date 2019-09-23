@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "ppt": "/pages/teacher/courseDetail/ppt",
+    "ppt": "/pages/student/courseDetail/ppt",
     "comment": "/pages/teacher/courseDetail/comment",
     "interactive": "/pages/teacher/courseDetail/interactive"
   }

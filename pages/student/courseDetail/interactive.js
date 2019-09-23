@@ -3,6 +3,8 @@ import {
   toNext
 } from '../../../utils/router.js';
 
+const app = getApp()
+
 const funcType = {
   'discuss': {
     'func': 'toDiscuss'
@@ -25,17 +27,17 @@ Component({
       type: 'discuss',
       msg: '课程讨论',
       url: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
-      func: 'check'
+      func: 'toDiscuss'
     }, {
       type: 'checkIn',
       msg: '课程签到',
       url: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
-      func: 'check'
+        func: 'checkCheckIn'
     }, {
       type: 'evaluation',
       msg: '进行评教',
       url: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
-      func: 'check'
+        func: 'checkEvalution'
     }],
     // 讨论区
     discuss: [{
@@ -47,29 +49,52 @@ Component({
     }]
   },
   methods: {
-    toDiscuss() {
-      toNext(router('common', 'chatRoom'), 'n')
-    },
-    check(e) {
+    checkCheckIn() {
       // 通过 向服务器 发请求 判断教师端 是否开启某项功能
+      let class_id = app.globalData.classId;
 
-      // 如果 开启 则根据开启的不同功能 调用不同方法
-      let type = e.currentTarget.dataset.type;
-      this[funcType[type]['func']]();
+      app.api.studentSign(class_id).then(res => {
+        if (res.code === 10003) {
+          // 如果未开启 则弹窗提示
+          this.unPremission();
+        } else {
+          // 如果 开启 则根据开启的不同功能 调用不同方法
+          // let type = e.currentTarget.dataset.type;
+          // this[funcType[type]['func']]();
+          this.checkIn();
+        }
+      })
 
-      // 如果未开启 则弹窗提示
-      // this.unPremission()
     },
+
+    checkEvalution() {
+      let quarter_id = app.globalData.quarterId;
+
+      app.api.studentEvaluation(quarter_id, 'E').then(res => {
+        if (res.code === 10003) {
+          // 如果未开启 则弹窗提示
+          this.unPremission();
+        } else {
+          // 如果 开启 则根据开启的不同功能 调用不同方法
+          // let type = e.currentTarget.dataset.type;
+          // this[funcType[type]['func']]();
+          this.toEvaluation();
+        }
+      })
+    },
+
     checkIn() {
       this.setData({
         premisson: 1
       })
     },
+
     unPremission() {
       this.setData({
         premisson: 0
       })
     },
+
     result() {
       // 根据服务器返回结果 判断判断签到是否成功
 
@@ -78,11 +103,17 @@ Component({
         premisson: 3
       })
     },
+
     hideModal() {
       this.setData({
         premisson: null
       })
     },
+
+    toDiscuss() {
+      toNext(router('common', 'chatRoom'), 'n')
+    },
+
     toEvaluation() {
       toNext(router('student', 'evaluation'), 'r')
     }

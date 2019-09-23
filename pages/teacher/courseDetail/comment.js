@@ -4,6 +4,8 @@ import {
 } from '../../../utils/router.js';
 import * as echarts from '../../../lib/ec-canvas/echarts.js';
 
+const app = getApp();
+
 function setOption(chart) {
   const option = {
     backgroundColor: "#ffffff",
@@ -58,19 +60,23 @@ Component({
     },
 
     show() {
-      this.ecComponent = this.selectComponent('#mychart-pie');
-      this.ecComponent.init((canvas, width, height) => {
-        // 获取组件的 canvas、width、height 后的回调函数
-        // 在这里初始化图表
-        const chart = echarts.init(canvas, null, {
-          width: width,
-          height: height
-        });
-        setOption(chart);
+      // this.ecComponent = this.selectComponent('#mychart-pie');
+      // this.ecComponent.init((canvas, width, height) => {
+      //   // 获取组件的 canvas、width、height 后的回调函数
+      //   // 在这里初始化图表
+      //   const chart = echarts.init(canvas, null, {
+      //     width: width,
+      //     height: height
+      //   });
+      //   setOption(chart);
 
-        // 注意这里一定要返回 chart 实例，否则会影响事件处理等
-        return chart;
-      });
+      //   // 注意这里一定要返回 chart 实例，否则会影响事件处理等
+      //   return chart;
+      // });
+      let quarter_id = app.globalData.quarterId
+      app.api.getVote(quarter_id).then(res => {
+        console.log(res.data)
+      })
     }
   }
 })

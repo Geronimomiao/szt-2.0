@@ -26,6 +26,7 @@ Component({
     // 进入教师管理页面
     toDetail(e) {
       let target = e.currentTarget.dataset.id;
+      app.globalData.classId = e.currentTarget.dataset.id;
       app.globalData.detail = app.globalData.classList.filter(item => item.id === target).shift();
       toNext(router('teacher', 'courseDetail'), 'n');
       console.log(router('teacher', 'courseDetail'))

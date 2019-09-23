@@ -73,7 +73,6 @@ class Api {
     } else if (state === 'teacher') {
       return this._request.getRequest(this._baseUrl + '/classes').then(res => res.data)
     }
-    
   }
 
   // 给学生添加课程
@@ -137,19 +136,63 @@ class Api {
   }
 
   // 学生端签到
+  studentSign(class_id) {
+    let data = {
+      class_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/signs', data).then(res => res.data)
+  }
 
   // 学生端评教
+  studentEvaluation(quarter_id, grade) {
+    let data = {
+      quarter_id, grade
+    }
 
+    return this._request.getRequest(this._baseUrl + '/add_judge', data).then(res => res.data)
+  }
 
   /**
    * 教师端交互功能
    */
 
-  // 教师端投票
+  // 教师端发起签到
+  teacherStartSign(class_id) {
+    let data = {
+      class_id
+    }
 
-  // 教师端签到
+    return this._request.getRequest(this._baseUrl + '/start_sign', data).then(res => res.data)
+  }
 
-  // 教师端评教
+  // 教师端结束签到
+  teacherStopSign(class_id) {
+    let data = {
+      class_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/stop_sign', data).then(res => res.data)
+  }
+
+  // 教师端发起评教
+  teacherStartEvaluation(quarter_id, teacher_id) {
+    let data = {
+      quarter_id, teacher_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/create_judge', data).then(res => res.data)
+  }
+
+  // 教师端获取评教信息
+  teacherGetEvaluation(quarter_id) {
+    let data = {
+      quarter_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/get_judge', data).then(res => res.data)
+  }
+
 
   /**
    * 聊天室接口
@@ -172,6 +215,7 @@ class Api {
       group_id,
       message
     }
+    
     return this._request.getRequest(this._baseUrl + '/talk', data).then(res => res.data)
   }
 
