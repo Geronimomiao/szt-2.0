@@ -77,7 +77,7 @@ Page({
         that.addGroup(client_id)
       } else if (msg.type === 'talk') {
         // 从服务端 收到消息
-        that.setMsgList(msg)
+        that.setMsg(msg)
       }
 
     })
@@ -92,17 +92,24 @@ Page({
     app.api.addGroup(token, group_id, client_id)
   },
 
+  // 收到 服务端消息
+  setMsg(msg) {
+    this.videoContext.sendDanmu({
+      text: msg.message,
+      color: getRandomColor()
+    })
+  },
+
   // 发消息
   sendMsg(msg) {
 
     let token = app.globalData.userInfo.token
     let group_id = '1234'
 
-    app.api.sendMeg(token, group_id, this.data.msg)
+    app.api.sendMeg(token, group_id, msg)
 
     // 发送信息后 清空输入框
     this.setData({
-      inputTxt: '',
       msg: null
     })
   },
@@ -112,6 +119,8 @@ Page({
     this.setData({
       msg: e.detail.value
     })
+
+    
   },
 
   onReady(res) {
@@ -127,10 +136,13 @@ Page({
   },
 
   bindSendDanmu() {
-    this.videoContext.sendDanmu({
-      text: this.inputValue,
-      color: getRandomColor()
-    })
+    // 自身和服务器 渲染 弹幕会出现2次
+    // this.videoContext.sendDanmu({
+    //   text: this.inputValue,
+    //   color: getRandomColor()
+    // })
+
+    this.sendMsg(this.inputValue)
   },
 
   bindInputBlur(e) {

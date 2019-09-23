@@ -4,7 +4,7 @@
 
 <view class="container">
   <view class="modify">
-    <video id="myVideo" src="{{url}}" enable-danmu danmu-btn controls bindended="select"></video>
+    <video id="myVideo" src="{{url}}" enable-danmu danmu-btn controls bindended="select" custom-cache="{{false}}"></video>
 
     <view class="btn-area">
       <view class="cu-form-group margin-top">

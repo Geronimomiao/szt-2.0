@@ -24,8 +24,7 @@ function setOptionGraph(chart) {
         {
           text: '虫子',
           max: 10
-        },
-
+        }
       ],
       center: ['50%', '50%'],
       radius: 120,
@@ -136,6 +135,8 @@ Component({
     ec: {
       lazyLoad: true
     },
+    // 提示信息
+    modalName: '',
     // 签到信息
     checkIn: null,
     // 评教信息
@@ -162,8 +163,14 @@ Component({
     toDiscuss() {
       toNext(router('common', 'chatRoom'), 'n')
     },
+
     showCheck() {
       
+      // 提示框
+      this.setData({
+        modalName: 'loading'
+      });
+
       // 教师发起签到
       let class_id = app.globalData.classId
       app.api.teacherStartSign(class_id).then(res => {
@@ -172,7 +179,7 @@ Component({
 
       setTimeout(() => {
         this.getCheck()
-      }, 6000)  
+      }, 8000)  
 
       
     },
@@ -203,6 +210,43 @@ Component({
     },
 
     showEvaluation() {
+
+      // 提示框
+      this.setData({
+        modalName: 'loading'
+      });
+
+      let token = app.globalData.userInfo.token
+
+      app.api.userInfo(token).then(res => {
+        
+        let teacher_id = res.data.id
+        let quarter_id = app.globalData.quarterId
+
+        // 教师端发起签到
+        app.api.teacherStartEvaluation(quarter_id, teacher_id).then(res => {
+          console.log(res)
+        })
+
+        setTimeout(() => {
+          this.getEvaluation()
+        }, 8000)
+      })  
+
+    },
+
+    getEvaluation() {
+
+      let quarter_id = app.globalData.quarterId
+
+      app.api.teacherStopEvaluation(quarter_id).then(res => {
+        console.log(res)
+      })
+
+      app.api.teacherGetEvaluation(quarter_id).then(res => {
+        console.log(res)
+      })
+
       this.setData({
         evaluation: true
       });
@@ -216,6 +260,12 @@ Component({
         setOptionGraph(chart);
 
         return chart;
+      });
+    },
+
+    hideModal() {
+      this.setData({
+        modalName: null
       });
     }
 

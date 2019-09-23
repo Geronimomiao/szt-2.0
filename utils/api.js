@@ -184,6 +184,16 @@ class Api {
     return this._request.getRequest(this._baseUrl + '/create_judge', data).then(res => res.data)
   }
 
+
+  // 教师端结束评教
+  teacherStopEvaluation(quarter_id) {
+    let data = {
+      quarter_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/stop_judge', data).then(res => res.data)
+  }
+
   // 教师端获取评教信息
   teacherGetEvaluation(quarter_id) {
     let data = {
@@ -215,7 +225,7 @@ class Api {
       group_id,
       message
     }
-    
+
     return this._request.getRequest(this._baseUrl + '/talk', data).then(res => res.data)
   }
 
