@@ -113,6 +113,44 @@ class Api {
     return this._request.getRequest(this._baseUrl + '/quarter', data).then(res => res.data)
   }
 
+  // 根据小节信息 查小节对应投票信息
+  getVote(quarter_id) {
+    let data = {
+      quarter_id
+    }
+
+    return this._request.getRequest(this._baseUrl + '/vote_index', data).then(res => res.data)
+  }
+
+  /**
+   * 学生端交互功能
+   */
+
+  // 学生端投票
+  studentVote(quarter_id, choice) {
+    let data = {
+      quarter_id,
+      choice
+    }
+
+    return this._request.getRequest(this._baseUrl + '/vote', data).then(res => res.data)
+  }
+
+  // 学生端签到
+
+  // 学生端评教
+
+
+  /**
+   * 教师端交互功能
+   */
+
+  // 教师端投票
+
+  // 教师端签到
+
+  // 教师端评教
+
   /**
    * 聊天室接口
    */

@@ -24,7 +24,7 @@ Page({
 
   onReady(res) {
     // 获取视频地址信息
-    let quarter_id = '2jhguy3qwr423f432'
+    let quarter_id = app.globalData.quarterId
 
     app.api.getVideoUrl(quarter_id).then(res => {
       videoUrl = res.data.videoUrl

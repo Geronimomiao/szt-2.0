@@ -25,7 +25,6 @@ Component({
     show() {
       let class_id = app.globalData.classId;
       app.api.getClassDetail(class_id).then(res => {
-        console.log(res)
         this.setData({
           classDetail: res.data.classDetail
         })
@@ -57,8 +56,8 @@ Component({
       this.triggerEvent('run', e.currentTarget.dataset.dest)
 
       // 将小节 id 保存至全局变量
+      app.globalData.quarterId = e.currentTarget.dataset.id
       
-      console.log(e.currentTarget.dataset.id)
     },
 
     down(e) {
