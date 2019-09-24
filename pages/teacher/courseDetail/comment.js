@@ -6,31 +6,17 @@ import * as echarts from '../../../lib/ec-canvas/echarts.js';
 
 const app = getApp();
 
-function setOption(chart) {
+function setOption(chart, data) {
   const option = {
     backgroundColor: "#ffffff",
-    color: ["#37A2DA", "#32C5E9", "#67E0E3", "#91F2DE", "#FFDB5C"],
+    color: ["#37A2DA", "#67E0E3", "#32C5E9" ,"#91F2DE", "#FFDB5C"],
     calculable: true,
     series: [{
       type: 'pie',
       center: ['50%', '50%'],
       roseType: 'radius',
       radius: [20, '50%'],
-      data: [{
-        value: 55,
-        name: '心理修养'
-      }, {
-        value: 20,
-        name: '道德修养'
-      }, {
-        value: 10,
-        name: '思想政治修养'
-      }, {
-        value: 20,
-        name: '科学文化修养'
-      }],
-      
-  
+      data
     }]
   };
   chart.setOption(option);
@@ -50,7 +36,9 @@ Component({
       img_url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg',
       msg: '我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭'
     }],
-    ec: { lazyLoad: true }
+    ec: {
+      lazyLoad: true
+    }
   },
 
 
@@ -60,22 +48,23 @@ Component({
     },
 
     show() {
-      // this.ecComponent = this.selectComponent('#mychart-pie');
-      // this.ecComponent.init((canvas, width, height) => {
-      //   // 获取组件的 canvas、width、height 后的回调函数
-      //   // 在这里初始化图表
-      //   const chart = echarts.init(canvas, null, {
-      //     width: width,
-      //     height: height
-      //   });
-      //   setOption(chart);
 
-      //   // 注意这里一定要返回 chart 实例，否则会影响事件处理等
-      //   return chart;
-      // });
       let quarter_id = app.globalData.quarterId
       app.api.getVote(quarter_id).then(res => {
-        console.log(res.data)
+        let data = res.data.data
+        this.ecComponent = this.selectComponent('#mychart-pie');
+        this.ecComponent.init((canvas, width, height) => {
+          // 获取组件的 canvas、width、height 后的回调函数
+          // 在这里初始化图表
+          const chart = echarts.init(canvas, null, {
+            width: width,
+            height: height
+          });
+          setOption(chart, data);
+
+          // 注意这里一定要返回 chart 实例，否则会影响事件处理等
+          return chart;
+        });
       })
     }
   }

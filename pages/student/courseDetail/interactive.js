@@ -71,6 +71,7 @@ Component({
       let quarter_id = app.globalData.quarterId;
 
       app.api.studentEvaluation(quarter_id, 'E').then(res => {
+        // console.log(res)
         if (res.code === 10003) {
           // 如果未开启 则弹窗提示
           this.unPremission();

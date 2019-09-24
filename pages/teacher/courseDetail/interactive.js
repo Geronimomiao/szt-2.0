@@ -5,27 +5,11 @@ import {
 import * as echarts from '../../../lib/ec-canvas/echarts.js';
 const app = getApp();
 
-function setOptionGraph(chart) {
+function setOptionGraph(chart, data) {
   const option = {
     color: ["#333333"],
     radar: {
-      indicator: [{
-          text: '阳光',
-          max: 300
-        },
-        {
-          text: '晴天',
-          max: 200
-        },
-        {
-          text: '乌云',
-          max: 100
-        },
-        {
-          text: '虫子',
-          max: 10
-        }
-      ],
+      indicator: data,
       center: ['50%', '50%'],
       radius: 120,
       startAngle: 90,
@@ -83,22 +67,16 @@ function setOptionGraph(chart) {
   chart.setOption(option);
 }
 
-function setOptionPie(chart) {
+function setOptionPie(chart, data) {
 
   const option = {
-    color: ["#37A2DA", "#91F2DE"], 
+    color: ["#37A2DA", "#91F2DE"],
     series: [{
       type: 'pie',
       center: ['50%', '50%'],
       radius: ['50%', '70%'],
       avoidLabelOverlap: false,
-      data: [{
-        value: 39,
-        name: '已到:39'
-      }, {
-        value: 2,
-        name: '未到:2'
-      }],
+      data,
       label: {
         normal: {
           show: true,
@@ -165,7 +143,7 @@ Component({
     },
 
     showCheck() {
-      
+
       // 提示框
       this.setData({
         modalName: 'loading'
@@ -179,9 +157,9 @@ Component({
 
       setTimeout(() => {
         this.getCheck()
-      }, 8000)  
+      }, 30000)
 
-      
+
     },
 
     // 获取学生签到信息
@@ -189,13 +167,32 @@ Component({
       // 教师结束签到
       let class_id = app.globalData.classId
       app.api.teacherStopSign(class_id).then(res => {
-        console.log(res)
+        
+        let onlineNumber = res.data !== null ? res.data : 0
+        
+        console.log()
+        let offlineNumber = res.msg
+        
+
+        let data = [{
+          value: onlineNumber,
+          name: `已到:${onlineNumber}`
+        }, {
+          value: offlineNumber,
+          name: `未到:${offlineNumber}`
+        }]
+
+        this.showCheckPie(data)
       })
 
       this.setData({
         checkIn: true
       });
 
+
+    },
+
+    showCheckPie(data) {
       // 展示图表信息
       this.ecComponent = this.selectComponent('#mychart-check-pie');
       this.ecComponent.init((canvas, width, height) => {
@@ -203,7 +200,7 @@ Component({
           width: width,
           height: height
         });
-        setOptionPie(chart);
+        setOptionPie(chart, data);
 
         return chart;
       });
@@ -219,7 +216,7 @@ Component({
       let token = app.globalData.userInfo.token
 
       app.api.userInfo(token).then(res => {
-        
+
         let teacher_id = res.data.id
         let quarter_id = app.globalData.quarterId
 
@@ -230,8 +227,8 @@ Component({
 
         setTimeout(() => {
           this.getEvaluation()
-        }, 8000)
-      })  
+        }, 30000)
+      })
 
     },
 
@@ -240,27 +237,31 @@ Component({
       let quarter_id = app.globalData.quarterId
 
       app.api.teacherStopEvaluation(quarter_id).then(res => {
-        console.log(res)
-      })
-
-      app.api.teacherGetEvaluation(quarter_id).then(res => {
-        console.log(res)
-      })
-
-      this.setData({
-        evaluation: true
-      });
-
-      this.ecComponent = this.selectComponent('#mychart-graph');
-      this.ecComponent.init((canvas, width, height) => {
-        const chart = echarts.init(canvas, null, {
-          width: width,
-          height: height
+        
+        this.setData({
+          evaluation: true
         });
-        setOptionGraph(chart);
 
-        return chart;
-      });
+        // 获取评教信息
+        let data = res.data.indicator
+        this.ecComponent = this.selectComponent('#mychart-graph');
+        this.ecComponent.init((canvas, width, height) => {
+          const chart = echarts.init(canvas, null, {
+            width: width,
+            height: height
+          });
+          setOptionGraph(chart, data);
+
+          return chart;
+        });
+
+        
+      
+      })
+
+     
+
+      
     },
 
     hideModal() {

@@ -8,8 +8,8 @@
     <view wx:if="{{!hasSelected}}" class="choose">
       <view class="selected">
         <view class="item"></view>
-        <view class="item select-2 animated fadeInDown delay-1s" bindtap="choice" data-point="+10" data-selectClass="select-2" data-choice="B"></view>
-        <view class="item select-3 animated fadeInDown delay-g1s" bindtap="choice" data-point="+5" data-selectClass="select-3" data-choice="C"></view>
+        <view class="item select-2 animated fadeInDown delay-1s" bindtap="choice" data-point="+10" data-selectClass="select-2" data-choice="晴天"></view>
+        <view class="item select-3 animated fadeInDown delay-g1s" bindtap="choice" data-point="+5" data-selectClass="select-3" data-choice="阴天"></view>
         <view class="item"></view>
       </view>
       <view class="point">
@@ -19,10 +19,10 @@
         <view class="item"></view>
       </view>
       <view class="selected">
-        <view class="item select-1 animated fadeInDown delay-s1s" bindtap="choice" data-point="+15" data-selectClass="select-1" data-choice="A"></view>
+        <view class="item select-1 animated fadeInDown delay-s1s" bindtap="choice" data-point="+15" data-selectClass="select-1" data-choice="阳光"></view>
         <view class="item"></view>
         <view class="item"></view>
-        <view class="item select-4 animated fadeInDown delay-2s" bindtap="choice" data-point="+1" data-selectClass="select-4" data-choice="D"></view>
+        <view class="item select-4 animated fadeInDown delay-2s" bindtap="choice" data-point="+1" data-selectClass="select-4" data-choice="虫子"></view>
       </view>
       <view class="point">
         <view class="item animated zoomIn delay-s1s">+15</view>
