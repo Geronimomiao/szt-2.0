@@ -1,15 +1,16 @@
 {
   "pages": [
-    
+    "pages/teacher/home/home",
+    "pages/common/register/register",
+    "pages/common/select/select",
     "pages/common/login/login",
     
-    "pages/common/register/register",
     "pages/common/chatRoom/chatRoom",
     
-    "pages/teacher/home/home",
     "pages/student/evaluation/evaluation",
+    "pages/student/home/home",
     
-    "pages/student/home/home",   
+      
 
     "pages/common/launch/launch",
     
@@ -17,7 +18,7 @@
     "pages/common/info/info",
     "pages/student/func/func",
     "pages/teacher/func/func",
-    "pages/common/select/select",
+   
     "pages/common/video/video",
     "pages/common/notFound/notFound"
   ],

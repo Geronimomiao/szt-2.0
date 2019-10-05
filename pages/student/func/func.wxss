@@ -49,5 +49,4 @@
 
 .fz {
   font-size: 4rem;
-  color: rgb(213, 228, 251)
 }

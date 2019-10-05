@@ -22,7 +22,7 @@ page {
 
 /* just for test */
 .container {
-  background: url('http://wsmpage.cn/szt2/bg.png');
+  /* background: url('http://wsmpage.cn/szt2/bg.png'); */
   background-size: 100% 100%;
 
   display: flex;
@@ -31,9 +31,10 @@ page {
 }
 
 .logo {
-  margin-top: 8rem;
+  margin-top: 3rem;
   width: 8rem;
   height: 8rem;
+  border-radius: 50%;
 }
 
 .bg {

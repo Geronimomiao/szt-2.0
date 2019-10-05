@@ -1,4 +1,4 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+<cu-custom bgColor="bg-red" isBack="{{true}}">
   <view slot="content">管理课程</view>
 </cu-custom>
 
@@ -17,7 +17,7 @@
             </view>
             <view class="desc-btm">
               <view class="text-grey">{{item.className}}</view>
-              <view class="text-blue" bindtap="{{item.detail}}" data-id="{{item.id}}">管理</view>
+              <view class="text-red" bindtap="{{item.detail}}" data-id="{{item.id}}">管理</view>
             </view>
           </view>
         </view>

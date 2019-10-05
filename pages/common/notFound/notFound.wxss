@@ -10,5 +10,5 @@
 
 .fz {
   font-size: 8rem;
-  color: rgb(213, 228, 251)
+  color: var(--lightRed)
 }

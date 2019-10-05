@@ -5,11 +5,23 @@ import {
 import * as echarts from '../../../lib/ec-canvas/echarts.js';
 const app = getApp();
 
-function setOptionGraph(chart, data) {
+function setOptionGraph(chart, score) {
   const option = {
     color: ["#333333"],
     radar: {
-      indicator: data,
+      indicator: [{
+        text: "阳光",
+        max: 300
+      }, {
+        text: "晴天",
+          max: 250
+      }, {
+        text: "乌云",
+        max: 150
+      }, {
+        text: "虫子",
+        max: 30
+      }],
       center: ['50%', '50%'],
       radius: 120,
       startAngle: 90,
@@ -54,7 +66,7 @@ function setOptionGraph(chart, data) {
         }
       },
       data: [{
-        value: [260, 100, 30, 1],
+        value: score,
         areaStyle: {
           normal: {
             color: 'rgba(255, 255, 255, 0.5)'
@@ -167,12 +179,12 @@ Component({
       // 教师结束签到
       let class_id = app.globalData.classId
       app.api.teacherStopSign(class_id).then(res => {
-        
+
         let onlineNumber = res.data !== null ? res.data : 0
-        
+
         console.log()
         let offlineNumber = res.msg
-        
+
 
         let data = [{
           value: onlineNumber,
@@ -237,31 +249,24 @@ Component({
       let quarter_id = app.globalData.quarterId
 
       app.api.teacherStopEvaluation(quarter_id).then(res => {
-        
+
         this.setData({
           evaluation: true
         });
 
         // 获取评教信息
-        let data = res.data.indicator
+        let score = res.data.indicator.map(item => item.value)
         this.ecComponent = this.selectComponent('#mychart-graph');
         this.ecComponent.init((canvas, width, height) => {
           const chart = echarts.init(canvas, null, {
             width: width,
             height: height
           });
-          setOptionGraph(chart, data);
+          setOptionGraph(chart, score);
 
           return chart;
         });
-
-        
-      
       })
-
-     
-
-      
     },
 
     hideModal() {

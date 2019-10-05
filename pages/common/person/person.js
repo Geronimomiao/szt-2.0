@@ -36,15 +36,6 @@ Component({
     }]
   },
 
-  // pageLifetimes: {
-  //  show(){
-  //     this.setData({
-  //       number: app.globalData.userInfo.number,
-  //       name: app.globalData.userInfo.name
-  //     })
-  //   } 
-  // },
-
   ready() {
     this.setData({
       number: app.globalData.userInfo.number,

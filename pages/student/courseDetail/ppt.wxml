@@ -20,33 +20,33 @@
           <!-- 准备 -->
           <view bindtap="changeBar" data-id="{{item.id}}" data-dest="1" wx:if="{{item.type==='准备'}}" class="chapter-item margin-sm padding-lr-sm">
             <view>
-              <text class="text-blue">{{item.type}}</text>
+              <text class="text-red">{{item.type}}</text>
               <text class="text-grey padding-left-xs">{{item.msg}}</text>
             </view>
 
-            <view class="cuIcon-notice"></view>
+            <view class="cuIcon-notice text-red"></view>
             
           </view>
 
           <!-- 交互 -->
           <view bindtap="changeBar" data-id="{{item.id}}" data-dest="2" wx:if="{{item.type==='互动'}}" class="chapter-item margin-sm padding-lr-sm">
             <view>
-              <text class="text-blue">{{item.type}}</text>
+              <text class="text-red">{{item.type}}</text>
               <text class="text-grey padding-left-xs">{{item.msg}}</text>
             </view>
 
-            <view class="cuIcon-share"></view>
+            <view class="cuIcon-share text-red"></view>
             
           </view>
 
           <!-- 课件 -->
           <view bindtap="down" data-url="{{item.ppt_url}}" wx:if="{{item.type==='课件'}}" class="chapter-item margin-sm padding-lr-sm">
             <view>
-              <text class="text-blue">{{item.type}}</text>
+              <text class="text-red">{{item.type}}</text>
               <text class="text-grey padding-left-xs">{{item.msg}}</text>
             </view>
 
-            <view class="cuIcon-down"></view>
+            <view class="cuIcon-down text-red"></view>
           </view>
         </view>
       </view>
@@ -66,7 +66,7 @@
     <view class="cu-bar bg-white justify-end">
       <view class="content">提示</view>
       <view class="action" bindtap="hideModal">
-        <text class="cuIcon-close text-blue"></text>
+        <text class="cuIcon-close text-red"></text>
       </view>
     </view>
     <view class="padding-xl">
@@ -81,7 +81,7 @@
     <view class="cu-bar bg-white justify-end">
       <view class="content">提示</view>
       <view class="action" bindtap="hideModal">
-        <text class="cuIcon-close text-blue"></text>
+        <text class="cuIcon-close text-red"></text>
       </view>
     </view>
     <view class="padding-xl">

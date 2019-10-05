@@ -1,4 +1,4 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+<cu-custom bgColor="bg-red" isBack="{{true}}">
   <view slot="content">时政专栏</view>
 </cu-custom>
 
@@ -27,7 +27,7 @@
         <view class="desc">
           <view class="text-content"> {{item.info}}</view>
           <view class="text-right">
-            <view class="cu-tag bg-blue light sm round">推荐</view>
+            <view class="cu-tag bg-red light sm round">推荐</view>
           </view>
         </view>
       </view>

@@ -1,11 +1,11 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+<cu-custom bgColor="bg-red" isBack="{{true}}">
   <view slot="content">课程列表</view>
 </cu-custom>
 
 <!-- 选择课程状态 -->
 <scroll-view scroll-x class="bg-white nav">
   <view class="flex text-center">
-    <view class="cu-item flex-sub {{index==TabCur?'text-blue cur':''}}" wx:for="{{state}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    <view class="cu-item flex-sub {{index==TabCur?'text-red cur':''}}" wx:for="{{state}}" wx:key bindtap="tabSelect" data-id="{{index}}">
       {{item.type}}
     </view>
   </view>
@@ -26,7 +26,7 @@
           <view class="desc-btm">
             <view class="text-grey">{{item.className}}</view>
             <view class="text-grey" data-id="{{item.id}}" wx:if="{{item.isJoin === true}}">已加入</view>
-            <view class="text-blue" data-id="{{item.id}}" wx:else bindtap="{{item.join}}">加入</view>
+            <view class="text-red" data-id="{{item.id}}" wx:else bindtap="{{item.join}}">加入</view>
           </view>
         </view>
       </view>

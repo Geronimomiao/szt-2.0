@@ -34,7 +34,7 @@
         <text class="cuIcon-attentionfill"></text> 关注</view>
     </view>
     <view class="flex flex-sub flex-direction solid-right">
-      <view class="text-xxl text-blue">20</view>
+      <view class="text-xxl text-red">20</view>
       <view class="margin-top-sm">
         <text class="cuIcon-favorfill"></text> 收藏</view>
     </view>

@@ -3,7 +3,7 @@
   <!-- 情景再现 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text> 情景再现
+      <text class="cuIcon-title text-red"></text> 情景再现
     </view>
   </view>
 
@@ -13,7 +13,7 @@
       <view class="cu-item shadow">
         <view class="image">
           <image src="{{item.img_url}}" mode="widthFix"></image>
-          <view class="cu-tag bg-blue">start</view>
+          <view class="cu-tag bg-red">start</view>
           <view class="cu-bar bg-shadeBottom">
             <text class="text-cut">{{item.msg}}</text>
           </view>
@@ -31,7 +31,7 @@
   <!-- 你的看法 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text> 你的看法
+      <text class="cuIcon-title text-red"></text> 你的看法
     </view>
   </view>
 
@@ -45,7 +45,7 @@
     <view class="point-chioce margin-top bg-white margin padding-sm">
       <view class="title">你的选择</view>
       <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
-        <view class="picker text-blue">
+        <view class="picker text-red">
           {{index?picker[index]: picker[0]}}
         </view>
       </picker>

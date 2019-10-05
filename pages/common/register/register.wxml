@@ -1,25 +1,35 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+<cu-custom bgColor="bg-red" isBack="{{true}}">
   <view slot="content">注册</view>
 </cu-custom>
 
-<view class='container'>
-  <image class="bg" src="/static/img/bg.png"></image>
-  <image class="logo z-index" src="/static/img/logo.png"></image>
-  <form class="form z-index">
-    <view class='item'>
-      <text class="iconfont icon-hezuohuobanmiyueguanli"></text>
+<view class='container-new'>
+
+  <image class="logo " src="/static/img/logo.png"></image>
+
+
+  <form class="form ">
+
+    <view class="cu-form-group">
+      <text class="title">姓名</text>
       <input placeholder="请输入姓名" bindinput="nameInput"></input>
     </view>
-    <view class='item'>
-      <text class="iconfont icon-xuexiao1"></text>
+
+    <view class="cu-form-group">
+      <view class="title">学校名称</view>
       <input placeholder="请输入学校名称" bindinput="schoolInput"></input>
     </view>
-    <view class='item'>
-      <text class="iconfont icon-zhanghaoquanxianguanli"></text>
+
+    <view class="cu-form-group">
+      <view class="title">学号/教工号</view>
       <input placeholder="请输入学号/教工号" bindinput="numberInput"></input>
     </view>
+
   </form>
-  <view class="reg z-index">
-   <button class="cu-btn lg shadow bg-gradual-blue" bindtap="toRegister">注册</button>
+
+  <view class="bottom">
+    <view class="reg ">
+      <button class="cu-btn lg shadow bg-red" bindtap="toRegister">注册</button>
+    </view>
   </view>
+
 </view>

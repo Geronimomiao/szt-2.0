@@ -1,4 +1,4 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+<cu-custom bgColor="bg-red" isBack="{{true}}">
   <view slot="content">情景再现</view>
 </cu-custom>
 
@@ -11,7 +11,7 @@
         <view class="title">弹幕</view>
         <input placeholder="请输入弹幕内容" bindblur="bindInputBlur"></input>
       </view>
-      <button class="cu-btn block bg-blue margin-tb-sm lg" bindtap="bindSendDanmu">发送弹幕</button>
+      <button class="cu-btn block bg-red margin-tb-sm lg" bindtap="bindSendDanmu">发送弹幕</button>
     </view>
   </view>
 

@@ -13,7 +13,10 @@ page {
 	/* Color 可以自定义相关配色 */
 	/* var属性兼容性 --> https://www.caniuse.com/#feat=css-variables */
 	/* 标准色 */
-	--red: #FF6464;
+
+	--red: #9F0D0D;
+  --lightRed: #E1C6CA;
+
 	--orange: #FC6E56;
 	--yellow: #fbbd08;
 	--olive: #8dc63f;

@@ -6,20 +6,20 @@
 <view class="cu-bar tabbar bg-white shadow foot">
   <view class="action" bindtap="NavChange" data-cur="index">
     <view class='cuIcon-cu-image'>
-      <text class="cuIcon-news lg {{PageCur=='index'?'text-blue':'text-gray'}}"></text>
+      <text class="cuIcon-news lg {{PageCur=='index'?'text-red':'text-gray'}}"></text>
     </view>
-    <view class="{{PageCur=='index'?'text-blue':'text-gray'}}">新闻</view>
+    <view class="{{PageCur=='index'?'text-red':'text-gray'}}">新闻</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="func">
     <view class='cuIcon-cu-image'>
-      <text class="cuIcon-rank lg {{PageCur=='func'?'text-blue':'text-gray'}}"></text>
+      <text class="cuIcon-rank lg {{PageCur=='func'?'text-red':'text-gray'}}"></text>
     </view>
-    <view class="{{PageCur=='func'?'text-blue':'text-gray'}}">课程</view>
+    <view class="{{PageCur=='func'?'text-red':'text-gray'}}">课程</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="person">
     <view class='cuIcon-cu-image'>
-      <text class="cuIcon-friendfamous lg {{PageCur=='person'?'text-blue':'text-gray'}}"></text>
+      <text class="cuIcon-friendfamous lg {{PageCur=='person'?'text-red':'text-gray'}}"></text>
     </view>
-    <view class="{{PageCur=='person'?'text-blue':'text-gray'}}">我的</view>
+    <view class="{{PageCur=='person'?'text-red':'text-gray'}}">我的</view>
   </view>
 </view>

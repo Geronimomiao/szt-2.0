@@ -19,20 +19,20 @@
 
 .icon-chat:before {
   content: "\e900";
-  color: rgb(204, 228, 252);
+  color: var(--lightRed);
 }
 
 .icon-class:before {
   content: "\e905";
-  color: rgb(204, 228, 252);
+  color: var(--lightRed);
 }
 
 .icon-fav:before {
   content: "\e907";
-  color: rgb(204, 228, 252);
+  color: var(--lightRed);
 }
 
 .icon-ppt:before {
   content: "\e909";
-  color: rgb(204, 228, 252);
+  color: var(--lightRed);
 }

@@ -8,7 +8,7 @@
   <!-- 签到详情 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text> 签到详情
+      <text class="cuIcon-title text-red"></text> 签到详情
     </view>
   </view>
 
@@ -26,7 +26,7 @@
   <!-- 评教详情 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text> 评教详情
+      <text class="cuIcon-title text-red"></text> 评教详情
     </view>
   </view>
 
@@ -50,7 +50,7 @@
     <view class="cu-bar bg-white justify-end">
       <view class="content">提示</view>
       <view class="action" bindtap="hideModal">
-        <text class="cuIcon-close text-blue"></text>
+        <text class="cuIcon-close text-red"></text>
       </view>
     </view>
     <view class="padding-xl">

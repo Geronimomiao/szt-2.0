@@ -1,4 +1,4 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+<cu-custom bgColor="bg-red" isBack="{{true}}">
   <view slot="content">课程</view>
 </cu-custom>
 
@@ -6,7 +6,7 @@
 
   <view class="cu-bar bg-white">
     <view class='action'>
-      <text class='cuIcon-title text-blue'></text>功能
+      <text class='cuIcon-title text-red'></text>功能
     </view>
   </view>
 
@@ -19,7 +19,7 @@
 
   <view class="cu-bar bg-white">
     <view class='action'>
-      <text class='cuIcon-title text-blue'></text>我的课程
+      <text class='cuIcon-title text-red'></text>我的课程
     </view>
   </view>
 
@@ -43,7 +43,7 @@
           <!-- 坑 将布尔值存为字符串 会强行转为 true -->
           <view class="desc-btm">
             <view class="text-grey">{{item.className}}</view>
-            <view class="text-blue" bindtap="{{item.detail}}" data-id="{{item.id}}">进入</view>
+            <view class="text-red" bindtap="{{item.detail}}" data-id="{{item.id}}">进入</view>
           </view>
         </view>
       </view>

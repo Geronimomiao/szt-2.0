@@ -2,7 +2,7 @@
   <!-- 情景再现 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text> 情景再现
+      <text class="cuIcon-title text-red"></text> 情景再现
     </view>
   </view>
 
@@ -12,7 +12,7 @@
       <view class="cu-item shadow">
         <view class="image">
           <image src="{{item.img_url}}" mode="widthFix"></image>
-          <view class="cu-tag bg-blue">start</view>
+          <view class="cu-tag bg-red">start</view>
           <view class="cu-bar bg-shadeBottom">
             <text class="text-cut">{{item.msg}}</text>
           </view>
@@ -30,7 +30,7 @@
   <!-- 你的看法 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text> 看法统计
+      <text class="cuIcon-title text-red"></text> 看法统计
     </view>
   </view>
 

@@ -8,13 +8,13 @@
   <!-- 讨论区 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-blue"></text> 讨论区
+      <text class="cuIcon-title text-red"></text> 讨论区
     </view>
   </view>
 
   <view class="title bg-white margin padding" wx:for="{{discuss}}" wx:key>
     <text class="padding-left-sm">{{item.title}}</text>
-    <text class="text-blue join" bindtap="toDiscuss">加入</text>
+    <text class="text-red join" bindtap="toDiscuss">加入</text>
   </view>
 
   <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->
@@ -30,7 +30,7 @@
     <view class="cu-bar bg-white justify-end">
       <view class="content">小贴士</view>
       <view class="action" bindtap="hideModal">
-        <text class="cuIcon-close text-blue"></text>
+        <text class="cuIcon-close text-red"></text>
       </view>
     </view>
     <view class="padding-xl">
@@ -49,7 +49,7 @@
       </view>
     </view>
     <view class="cu-bar bg-white" bindtap="result">
-      <view class="action margin-0 flex-sub  solid-left text-blue" bindtap="hideModal">立即签到</view>
+      <view class="action margin-0 flex-sub  solid-left text-red" bindtap="hideModal">立即签到</view>
     </view>
   </view>
 </view>
@@ -59,7 +59,7 @@
     <view class="cu-bar bg-white justify-end">
       <view class="content">小贴士</view>
       <view class="action" bindtap="hideModal">
-        <text class="cuIcon-close text-blue"></text>
+        <text class="cuIcon-close text-red"></text>
       </view>
     </view>
     <view class="padding-xl">

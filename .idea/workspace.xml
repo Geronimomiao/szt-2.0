@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f109a310-0b46-4449-bf59-99047e3a204f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/colorui/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/lib/colorui/main.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/my-icon/icon.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/lib/my-icon/icon.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/chatRoom/chatRoom.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/chatRoom/chatRoom.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/info/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/info/info.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/login/login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/login/login.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/login/login.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/login/login.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/notFound/notFound.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/notFound/notFound.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/notFound/notFound.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/notFound/notFound.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/person/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/person/person.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/person/person.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/person/person.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/register/register.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/register/register.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/register/register.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/register/register.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/select/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/select/select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/select/select.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/select/select.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/select/select.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/select/select.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/video/video.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/video/video.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/comment.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/comment.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/courseDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/courseDetail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/interactive.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/interactive.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/ppt.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/ppt.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/courseList/courseList.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseList/courseList.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/evaluation/evaluation.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/evaluation/evaluation.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/func/func.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/func/func.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/func/func.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/func/func.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/home/home.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/comment.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/comment.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/courseDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/courseDetail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teacher/func/func.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/func/func.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/teacher/home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/home/home.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/student.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/student.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/teacher.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/teacher.png" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/student/courseList/courseList.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Downloads/font_1444648_ele12r1mlq/iconfont.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bg-gradual-blue</find>
+      <find>logo</find>
+      <find>text-blue</find>
+      <find>bg-blue</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>text-red</replace>
+      <replace>bg-red</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/pages</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pages/teacher/func/func.wxml" />
+        <option value="$PROJECT_DIR$/pages/student/courseList/courseList.wxml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="408" />
+    <option name="y" value="117" />
+    <option name="width" value="1420" />
+    <option name="height" value="991" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="miniprogram-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniprogram-1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniprogram-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniprogram-1" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniprogram-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniprogram-1" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f109a310-0b46-4449-bf59-99047e3a204f" name="Default Changelist" comment="" />
+      <created>1570174140546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570174140546</updated>
+      <workItem from="1570174143387" duration="501000" />
+      <workItem from="1570188307076" duration="150000" />
+      <workItem from="1570188638813" duration="2000" />
+      <workItem from="1570188649800" duration="269000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="922000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="408" y="117" width="1420" height="991" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18870622" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pages/student/courseList/courseList.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/font_1444648_ele12r1mlq/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

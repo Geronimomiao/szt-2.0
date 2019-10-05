@@ -1,36 +1,41 @@
 .select {
   height: 100vh;
   width: 100vw;
-  
-  background: url('http://wsmpage.cn/szt2/bg.png');
-  background-size: 100% 100%;
 }
-
-.tower-swiper .tower-item {
-	transform: scale(calc(0.5 + var(--index) / 10));
-	margin-left: calc(var(--left) * 100rpx - 150rpx);
-	z-index: var(--index);
-}
-
-.tower-swiper {
-  height: 30rem;
-}
-
-.tower-swiper .tower-item .swiper-item{
-  height: 75vh;
-  width: 85vw;
-}
-
-.tower-swiper .tower-item {
-  height: 75vh;
-  width: 10rpx;
-}
-
 
 .select > .confirm {
-  transform: translate(-40%, 0);
-  left: 50%;
-  position: absolute;
-  bottom: 6rem;
+  width: 100%;
+  text-align: center;
 }
 
+.select > .confirm button {
+  width: 85%;
+}
+
+.selectList {
+  margin: 3rem 0;
+  display: flex;
+}
+
+.selectList .item {
+  flex: 1;
+  height: 55vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+image {
+  height: 35vh;
+  width: 35vw;
+  padding: 2rem 1rem;
+  border: 2px dashed #aaaaaa;
+  border-radius: 8%;
+  text-align: center;
+}
+
+.active image {
+  background-color: #FEEFEF;
+  border: 2px dashed #F2CFCF;
+}
