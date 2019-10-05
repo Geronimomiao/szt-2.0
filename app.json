@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/student/home/home",
     "pages/teacher/home/home",
     "pages/common/register/register",
     "pages/common/select/select",
@@ -8,7 +9,7 @@
     "pages/common/chatRoom/chatRoom",
     
     "pages/student/evaluation/evaluation",
-    "pages/student/home/home",
+    
     
       
 

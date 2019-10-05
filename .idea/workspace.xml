@@ -2,42 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f109a310-0b46-4449-bf59-99047e3a204f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/colorui/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/lib/colorui/main.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/my-icon/icon.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/lib/my-icon/icon.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/chatRoom/chatRoom.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/chatRoom/chatRoom.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/info/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/info/info.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/login/login.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/login/login.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/login/login.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/login/login.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/notFound/notFound.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/notFound/notFound.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/notFound/notFound.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/notFound/notFound.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/person/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/person/person.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ali-icon/szt.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ali-icon/szt.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/common/person/person.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/person/person.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/register/register.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/register/register.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/register/register.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/register/register.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/select/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/select/select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/select/select.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/select/select.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/select/select.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/select/select.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/common/video/video.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/video/video.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/person/person.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/person/person.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/comment.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/comment.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/courseDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/courseDetail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/comment.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/comment.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/interactive.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/interactive.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/ppt.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/ppt.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/student/courseList/courseList.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseList/courseList.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/student/evaluation/evaluation.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/evaluation/evaluation.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/student/func/func.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/func/func.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/student/func/func.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/func/func.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/student/func/func.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/func/func.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/student/home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/home/home.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/comment.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/comment.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/courseDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/courseDetail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/courseDetail/interactive.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teacher/func/func.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/func/func.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/teacher/home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/teacher/home/home.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/student.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/student.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/teacher.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/teacher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/common.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/common.wxss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,14 +42,21 @@
         <entry file="file://$PROJECT_DIR$/app.wxss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="398">
-              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Downloads/font_1444648_ele12r1mlq/iconfont.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" selection-end-line="65" />
+              <folding>
+                <element signature="e#180#3902#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -81,6 +67,8 @@
       <find>logo</find>
       <find>text-blue</find>
       <find>bg-blue</find>
+      <find>cuIcon-bad</find>
+      <find>lightRed</find>
     </findStrings>
     <replaceStrings>
       <replace>text-red</replace>
@@ -89,6 +77,8 @@
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/pages</dir>
+      <dir>$PROJECT_DIR$/component</dir>
+      <dir>$PROJECT_DIR$/lib</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -103,8 +93,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="408" />
-    <option name="y" value="117" />
+    <option name="x" value="699" />
+    <option name="y" value="163" />
     <option name="width" value="1420" />
     <option name="height" value="991" />
   </component>
@@ -120,6 +110,11 @@
             <path>
               <item name="miniprogram-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="miniprogram-1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniprogram-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniprogram-1" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miniprogram-1" type="b2602c69:ProjectViewProjectNode" />
@@ -170,16 +165,15 @@
       <workItem from="1570174143387" duration="501000" />
       <workItem from="1570188307076" duration="150000" />
       <workItem from="1570188638813" duration="2000" />
-      <workItem from="1570188649800" duration="269000" />
+      <workItem from="1570188649800" duration="905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="922000" />
+    <option name="totallyTimeSpent" value="1558000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="408" y="117" width="1420" height="991" extended-state="0" />
-    <editor active="true" />
+    <frame x="699" y="163" width="1420" height="991" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18870622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -214,12 +208,19 @@
     <entry file="file://$PROJECT_DIR$/app.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/font_1444648_ele12r1mlq/iconfont.css">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" selection-end-line="65" />
+          <folding>
+            <element signature="e#180#3902#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

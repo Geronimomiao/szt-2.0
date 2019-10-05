@@ -8,13 +8,13 @@
   <!-- 讨论区 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-red"></text> 讨论区
+      <text class="szt szt-taolun1 text-df margin-right-xs"></text> 讨论区
     </view>
   </view>
 
   <view class="title bg-white margin padding" wx:for="{{discuss}}" wx:key>
     <text class="padding-left-sm">{{item.title}}</text>
-    <text class="text-red join" bindtap="toDiscuss">加入</text>
+    <text class="text-red join szt szt-taolun" bindtap="toDiscuss"></text>
   </view>
 
   <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->

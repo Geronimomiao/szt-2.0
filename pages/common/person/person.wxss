@@ -1,43 +1,38 @@
+.scrollPage {
+  height: 100vh;
+  background-color: #fff;
+}
+
 .bg {
-  background-image: url(https://img.wsmpage.cn/szt2/bg/1.png);
+  background-image: url(https://img.wsmpage.cn/szt2/bg/bg-top.png);
   background-size: cover;
-  height: 300rpx;
+  height: 550rpx;
   position: relative;
   color: #fff;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-.cu-card {
-  padding-top: 130rpx;
-}
-
-.cu-card > .cu-item {
-  height: 240rpx;
-  background: linear-gradient(45deg, #0081ff, #1cbbb4);
-  border-radius: 10rpx;
-  
-}
-
-.cu-card > .cu-item > .info {
-  height: 100%;
+ .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.8rem;
+  padding: 0rpx 0.8rem;
+  padding-top: 135rpx;
+  padding-bottom: 50rpx;
 }
 
-.cu-card > .cu-item > .info > .userinfo {
+ .info > .userinfo {
   display: flex;
   align-items: center;
 }
 
-.cu-card > .cu-item > .info .cuIcon-right {
+ .info .cuIcon-right {
   font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
 }
 
-.cu-card > .cu-item > .info .userinfo .userinfo-avatar {
+ .info .userinfo .userinfo-avatar {
   width: 160rpx;
   height: 160rpx;
   border-radius: 50%;
@@ -56,7 +51,6 @@
 }
 
 .shadow-warp {
-  padding-top: 140rpx;
   box-shadow: 0 0 0;
 }
 
@@ -68,18 +62,24 @@
   margin: auto 0;
 }
 
-.func-item {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  background-color: #fff;
-  border-radius: 5rpx;
-  box-shadow:2px 2px 5px rgb(185, 185, 185);
-}
-
 .icon {
   font-weight: 700;
   margin-right: 13rpx;
 }
 
+.func {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top: 530rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
 
+
+.func-item {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 0.9rem;
+}

@@ -3,7 +3,7 @@
   <!-- 情景再现 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-red"></text> 情景再现
+      <text class="szt szt-dianying text-df margin-right-xs"></text> 情景再现
     </view>
   </view>
 
@@ -13,7 +13,7 @@
       <view class="cu-item shadow">
         <view class="image">
           <image src="{{item.img_url}}" mode="widthFix"></image>
-          <view class="cu-tag bg-red">start</view>
+          <view class="cu-tag bg-blue">start</view>
           <view class="cu-bar bg-shadeBottom">
             <text class="text-cut">{{item.msg}}</text>
           </view>
@@ -31,7 +31,7 @@
   <!-- 你的看法 -->
   <view class="cu-bar bg-white margin-top-sm">
     <view class="action">
-      <text class="cuIcon-title text-red"></text> 你的看法
+      <text class="szt szt-pingjia text-df margin-right-xs"></text> 看法统计
     </view>
   </view>
 
@@ -42,14 +42,33 @@
       {{question}}
     </view>
     <!-- 选项 -->
-    <view class="point-chioce margin-top bg-white margin padding-sm">
+    <!-- <view class="point-chioce margin-top bg-white margin padding-sm">
       <view class="title">你的选择</view>
       <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
         <view class="picker text-red">
           {{index?picker[index]: picker[0]}}
         </view>
       </picker>
+    </view> -->
+  </view>
+
+  <!-- 你的看法 -->
+  <view class="cu-bar bg-white margin-top-sm" wx:if="{{question}}">
+    <view class="action">
+      <text class="szt szt-mn_gongneng text-df margin-right-xs"></text> 你的选择
     </view>
+  </view>
+
+  <!-- 选项 -->
+  <view class="grid col-2 margin-tb text-center" wx:if="{{question}}">
+    <view class="padding-sm" wx:for="{{picker}}" wx:key>
+      <view class="padding {{curId===index?'bg-red':'bg-white'}} point-msg" data-id="{{index}}" bindtap="change">{{item}}</view>
+    </view>
+  </view>
+
+
+  <view class="point-msg padding-sm margin-bottom tar" wx:if="{{question}}">
+    <text class="padding-sm bg-red point-msg" bindtap="submit">提交</text>
   </view>
 
   <!-- 如果老师 仅初始化 课程 并未进行详细设计 -->

@@ -3,7 +3,7 @@
 }
 
 .point-msg {
-  border-radius: 5rpx;
+  border-radius: 8rpx;
 }
 
 .point-chioce {
@@ -23,5 +23,9 @@
 
 .fz {
   font-size: 5rem;
-  color: rgb(213, 228, 251)
+  color: var(--lightRed);
+}
+
+.tar {
+  text-align: right;
 }

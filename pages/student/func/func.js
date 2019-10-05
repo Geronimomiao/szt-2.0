@@ -13,28 +13,32 @@ Component({
     // 学生 功能栏
     list: [{
       bgCls: 'bc-top',
-      iconCls: 'cuIcon-group',
+      iconCls: 'szt-wp-sj',
       text: '加入课程',
       dest: 'course',
-      func: 'toDest'
+      func: 'toDest',
+      bg: 'bg-r'
     }, {
       bgCls: 'bc-top',
-      iconCls: 'cuIcon-post',
+      iconCls: 'szt-liebiao',
       text: '查看课件',
       dest: 'ppt',
-      func: 'toDest'
+      func: 'toDest',
+      bg: 'bg-b'
     }, {
       bgCls: 'bc-bottom',
-      iconCls: 'cuIcon-record',
+      iconCls: 'szt-dianying',
       text: '情景再现',
       dest: 'video',
-      func: 'toDest'
+      func: 'toDest',
+      bg: 'bg-o'
     }, {
       bgCls: 'bc-bottom',
-      iconCls: 'cuIcon-punch',
+      iconCls: 'szt-pingjia-',
       text: '课程评价',
       dest: 'comment',
-      func: 'toDest'
+      func: 'toDest',
+      bg: 'bg-g'
     }],
     // 是否展示 未添加课程状态
     flag: true ,
@@ -76,10 +80,10 @@ Component({
       let dest = e.currentTarget.dataset.dest;
       toNext(router('student', 'courseList'), 'n')
     },
-    
+
     toDetail(e) {
       let target = e.currentTarget.dataset.id;
-      app.globalData.classId = target; 
+      app.globalData.classId = target;
       app.globalData.detail = app.globalData.classList.filter(item => item.id === target).shift();
       toNext(router('student', 'courseDetail'), 'n');
     },

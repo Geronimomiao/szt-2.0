@@ -12,7 +12,8 @@ Component({
     question: '',
     picker: [],
     // 情景再现 展示卡片 所需要数据
-    scene: []
+    scene: [],
+    curId: -1
   },
 
   pageLifetimes: {
@@ -30,16 +31,17 @@ Component({
       toNext(router('common', 'video'), 'n')
     },
 
-    PickerChange(e) {
-      this.setData({
-        index: e.detail.value
-      })
+    // PickerChange(e) {
+    //   this.setData({
+    //     index: e.detail.value
+    //   })
 
-      // 学生端投票
-      let choice = this.data.picker[e.detail.value]
-      let quarter_id = app.globalData.quarterId;
-      app.api.studentVote(quarter_id, choice)
-    },
+    //   // 学生端投票
+    //   let choice = this.data.picker[e.detail.value]
+    //   console.log(choice)
+    //   let quarter_id = app.globalData.quarterId
+    //   app.api.studentVote(quarter_id, choice)
+    // },
 
     getInfo() {
       let quarter_id = app.globalData.quarterId;
@@ -50,11 +52,26 @@ Component({
       })
 
       app.api.getVote(quarter_id).then(res => {
+        console.log(res)
         this.setData({
           picker: res.data.picker.split(','),
           question: res.data.question
         })
       })
+    },
+
+    change(e) {
+      this.setData({
+        curId: e.currentTarget.dataset.id
+      })
+    },
+
+    submit() {
+
+      // 学生端 投票
+      let choice = this.data.picker[this.data.curId]
+      let quarter_id = app.globalData.quarterId
+      app.api.studentVote(quarter_id, choice)
     }
   }
 })

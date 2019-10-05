@@ -4,22 +4,26 @@
 
 <scroll-view scroll-y class="scrollPage">
 
-  <view class="cu-bar bg-white">
-    <view class='action'>
-      <text class='cuIcon-title text-red'></text>功能
-    </view>
-  </view>
-
-  <view class="nav-list">
-    <view class="nav-li {{item.bgCls}}" wx:for="{{list}}" wx:key bindtap="{{item.func}}" data-dest="{{item.dest}}">
-      <view class="{{item.iconCls}} icon"></view>
+  <view class="bg-white func-top">
+    <view wx:for="{{list}}" wx:key bindtap="{{item.func}}" data-dest="{{item.dest}}" class="item">
+      <view class="{{item.bg}} bg-func">
+        <view class="{{item.iconCls}} szt"></view>
+      </view>
+      
       <view class='text'>{{item.text}}</view>
     </view>
   </view>
 
-  <view class="cu-bar bg-white">
-    <view class='action'>
-      <text class='cuIcon-title text-red'></text>我的课程
+
+  <view class="cu-list menu bg-white">
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-black">我的课程</text>
+      </view>
+      <view class="action" bindtap="toDest">
+        <text class="text-grey" >更多</text>
+        <text class="cuIcon-right text-grey"></text>
+      </view>
     </view>
   </view>
 
@@ -30,8 +34,8 @@
   </view>
 
   <!-- 如果用户添加课程 -->
-  <view class="cu-card article padding-sm" wx:else>
-    <view class="cu-item shadow" wx:for="{{myclass}}" wx:key>
+  <view class="cu-card article no-card" wx:else>
+    <view class="cu-item shadow solid-bottom " wx:for="{{myclass}}" wx:key>
       <view class="cu-item shadow">
       <view class="content">
         <image src="{{item.url}}" mode="aspectFill" bindtap="{{item.detail}}" data-id="{{item.id}}"></image>

@@ -1,9 +1,9 @@
 .info {
-  background: url('http://wsmpage.cn/szt2/bg.png');
+  /* background: url('http://wsmpage.cn/szt2/bg.png'); */
   background-size: 100% 100%;
   height: 100vh;
 }
-
+/* 
 .info .userinfo {
   display: flex;
   flex-direction: column;
@@ -29,4 +29,21 @@
 
 .info .cu-list {
   margin: 0 75rpx;
+} */
+
+.userinfo {
+  background-color: #fff;
+}
+
+.msg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 5%;
+  overflow:hidden; 
 }

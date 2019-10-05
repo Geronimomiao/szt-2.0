@@ -3,6 +3,12 @@
 	color: #fff;
 }
 
+.bg-lightWhite {
+	background-color: #EFEFF4;
+	color: #767678;
+}
+
+
 /* 设置图标的默认样式 */
 .chart {
   height: 350rpx;
