@@ -14,7 +14,7 @@ function setOptionGraph(chart, score) {
         max: 300
       }, {
         text: "晴天",
-          max: 250
+        max: 250
       }, {
         text: "乌云",
         max: 150
@@ -135,17 +135,20 @@ Component({
       type: 'discuss',
       msg: '课程讨论',
       url: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
-      func: 'toDiscuss'
+      func: 'toDiscuss',
+      cls: 'bg-gradual-red'
     }, {
       type: 'checkIn',
       msg: '发起签到',
       url: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
-      func: 'showCheck'
+      func: 'showCheck',
+      cls: 'bg-gradual-green'
     }, {
       type: 'evaluation',
       msg: '发起评教',
       url: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
-      func: 'showEvaluation'
+      func: 'showEvaluation',
+      cls: 'bg-gradual-blue'
     }]
   },
 

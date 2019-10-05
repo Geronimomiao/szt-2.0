@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ali-icon/szt.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ali-icon/szt.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/info/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/info/info.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/common/info/info.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/info/info.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/common/person/person.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/person/person.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/common/person/person.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/common/person/person.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/student/courseDetail/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/courseDetail/comment.js" afterDir="false" />
@@ -69,6 +71,7 @@
       <find>bg-blue</find>
       <find>cuIcon-bad</find>
       <find>lightRed</find>
+      <find>gr</find>
     </findStrings>
     <replaceStrings>
       <replace>text-red</replace>
@@ -93,8 +96,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="699" />
-    <option name="y" value="163" />
+    <option name="x" value="293" />
+    <option name="y" value="83" />
     <option name="width" value="1420" />
     <option name="height" value="991" />
   </component>
@@ -165,15 +168,15 @@
       <workItem from="1570174143387" duration="501000" />
       <workItem from="1570188307076" duration="150000" />
       <workItem from="1570188638813" duration="2000" />
-      <workItem from="1570188649800" duration="905000" />
+      <workItem from="1570188649800" duration="1059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1558000" />
+    <option name="totallyTimeSpent" value="1712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="699" y="163" width="1420" height="991" extended-state="0" />
+    <frame x="548" y="156" width="1420" height="991" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18870622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -219,6 +222,13 @@
           <folding>
             <element signature="e#180#3902#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ec-canvas/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="263" selection-start-line="1" selection-start-column="263" selection-end-line="1" selection-end-column="263" />
         </state>
       </provider>
     </entry>

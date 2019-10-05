@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/common/launch/launch",
     "pages/student/home/home",
     "pages/teacher/home/home",
     "pages/common/register/register",
@@ -13,7 +14,7 @@
     
       
 
-    "pages/common/launch/launch",
+   
     
     "pages/student/courseList/courseList",
     "pages/common/info/info",

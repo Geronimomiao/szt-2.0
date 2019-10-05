@@ -2,7 +2,7 @@
 
   <!-- 选项 -->
   <view class="select">
-    <view class="card bg-img shadow-blur padding margin" data-type="{{item.type}}" bindtap="{{item.func}}" style="background-image:url({{item.url}})" wx:for="{{card}}" wx:key>{{item.msg}}</view>
+    <view class="card bg-img shadow-blur padding margin {{item.cls}}" data-type="{{item.type}}" bindtap="{{item.func}}"  wx:for="{{card}}" wx:key>{{item.msg}}</view>
   </view>
 
   <!-- 签到详情 -->

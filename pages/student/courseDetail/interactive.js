@@ -27,17 +27,20 @@ Component({
       type: 'discuss',
       msg: '课程讨论',
       url: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
-      func: 'toDiscuss'
+      func: 'toDiscuss',
+      cls: 'bg-gradual-red'
     }, {
       type: 'checkIn',
       msg: '课程签到',
       url: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
-        func: 'checkCheckIn'
+      func: 'checkCheckIn',
+      cls: 'bg-gradual-green'
     }, {
       type: 'evaluation',
       msg: '进行评教',
       url: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
-        func: 'checkEvalution'
+      func: 'checkEvalution',
+      cls: 'bg-gradual-blue'
     }],
     // 讨论区
     discuss: [{
