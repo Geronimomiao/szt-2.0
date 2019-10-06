@@ -78,3 +78,18 @@
   </view>
 
 </scroll-view>
+
+
+<view class="cu-modal {{modalName=='tip' ? 'show' : ''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      选项已提交
+    </view>
+  </view>
+</view>

@@ -13,7 +13,8 @@ Component({
     picker: [],
     // 情景再现 展示卡片 所需要数据
     scene: [],
-    curId: -1
+    curId: -1,
+    modalName: null
   },
 
   pageLifetimes: {
@@ -67,11 +68,21 @@ Component({
     },
 
     submit() {
+      
+      this.setData({
+        modalName: 'tip'
+      });
 
       // 学生端 投票
       let choice = this.data.picker[this.data.curId]
       let quarter_id = app.globalData.quarterId
       app.api.studentVote(quarter_id, choice)
-    }
+    },
+
+    hideModal() {
+      this.setData({
+        modalName: null
+      });
+    },
   }
 })
